@@ -70,5 +70,25 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         {
 
         }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hgkgf_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -470,7 +470,7 @@
             // buttonExit
             // 
             this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonExit.Location = new System.Drawing.Point(692, 888);
+            this.buttonExit.Location = new System.Drawing.Point(1003, 888);
             this.buttonExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(117, 52);
@@ -650,7 +650,7 @@
             // MainMenuButton
             // 
             this.MainMenuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MainMenuButton.Location = new System.Drawing.Point(322, 888);
+            this.MainMenuButton.Location = new System.Drawing.Point(633, 888);
             this.MainMenuButton.Name = "MainMenuButton";
             this.MainMenuButton.Size = new System.Drawing.Size(117, 52);
             this.MainMenuButton.TabIndex = 86;
@@ -660,7 +660,7 @@
             // BookAClassButton
             // 
             this.BookAClassButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BookAClassButton.Location = new System.Drawing.Point(445, 888);
+            this.BookAClassButton.Location = new System.Drawing.Point(756, 888);
             this.BookAClassButton.Name = "BookAClassButton";
             this.BookAClassButton.Size = new System.Drawing.Size(117, 52);
             this.BookAClassButton.TabIndex = 87;
@@ -670,12 +670,13 @@
             // HelpButton
             // 
             this.HelpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HelpButton.Location = new System.Drawing.Point(568, 888);
+            this.HelpButton.Location = new System.Drawing.Point(879, 888);
             this.HelpButton.Name = "HelpButton";
             this.HelpButton.Size = new System.Drawing.Size(118, 52);
             this.HelpButton.TabIndex = 88;
             this.HelpButton.Text = "Help";
             this.HelpButton.UseVisualStyleBackColor = true;
+            this.HelpButton.Click += new System.EventHandler(this.HelpButton_Click);
             // 
             // Main_Form
             // 

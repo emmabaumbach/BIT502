@@ -489,5 +489,12 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         {
 
         }
+
+        private void HelpButton_Click(object sender, EventArgs e)
+        {
+            string helpMessage = "Enter new member details, select mandatory options(membership type, duration, pay frequency), and select and extras (optional)." + Environment.NewLine + Environment.NewLine + "Selecting ‘Calculate’ will output amount details based on your selection." + Environment.NewLine + Environment.NewLine + "Click ‘Reset’ to start over, or ‘Submit’ to confirm new member details and submit to the database." + Environment.NewLine + Environment.NewLine + "Alternatively, ‘Main Menu’ will take you back to the main menu, ‘Book a Class’ will open a class booking screen, and the ‘Exit’ button will exit the application.";
+            string messageBoxTitle = "Add Member Help";
+            MessageBox.Show(helpMessage, messageBoxTitle);
+        }
     }
 }

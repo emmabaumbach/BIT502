@@ -43,5 +43,10 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
             string messageBoxTitle = "Main Menu Help";
             MessageBox.Show(helpMessage, messageBoxTitle);
         }
+
+        private void bookClassButton_Click(object sender, EventArgs e)
+        {
+            new BookAClass().Show();
+        }
     }
 }

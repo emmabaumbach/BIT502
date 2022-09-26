@@ -62,7 +62,7 @@
             // helpButton
             // 
             this.helpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.helpButton.Location = new System.Drawing.Point(390, 597);
+            this.helpButton.Location = new System.Drawing.Point(420, 597);
             this.helpButton.Name = "helpButton";
             this.helpButton.Size = new System.Drawing.Size(179, 41);
             this.helpButton.TabIndex = 0;
@@ -73,7 +73,7 @@
             // searchButton
             // 
             this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchButton.Location = new System.Drawing.Point(205, 597);
+            this.searchButton.Location = new System.Drawing.Point(235, 597);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(179, 41);
             this.searchButton.TabIndex = 1;
@@ -83,7 +83,7 @@
             // exitButton
             // 
             this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitButton.Location = new System.Drawing.Point(576, 597);
+            this.exitButton.Location = new System.Drawing.Point(606, 597);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(179, 41);
             this.exitButton.TabIndex = 2;
@@ -95,7 +95,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(306, 69);
+            this.label2.Location = new System.Drawing.Point(329, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(154, 29);
             this.label2.TabIndex = 12;
@@ -105,7 +105,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(294, 23);
+            this.label1.Location = new System.Drawing.Point(317, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(184, 46);
             this.label1.TabIndex = 11;
@@ -114,7 +114,7 @@
             // mainMenuButton
             // 
             this.mainMenuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainMenuButton.Location = new System.Drawing.Point(20, 597);
+            this.mainMenuButton.Location = new System.Drawing.Point(50, 597);
             this.mainMenuButton.Name = "mainMenuButton";
             this.mainMenuButton.Size = new System.Drawing.Size(179, 41);
             this.mainMenuButton.TabIndex = 13;
@@ -125,7 +125,7 @@
             // selectButton
             // 
             this.selectButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectButton.Location = new System.Drawing.Point(518, 141);
+            this.selectButton.Location = new System.Drawing.Point(540, 141);
             this.selectButton.Name = "selectButton";
             this.selectButton.Size = new System.Drawing.Size(179, 41);
             this.selectButton.TabIndex = 14;
@@ -135,7 +135,7 @@
             // bookClassButton
             // 
             this.bookClassButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bookClassButton.Location = new System.Drawing.Point(434, 467);
+            this.bookClassButton.Location = new System.Drawing.Point(456, 467);
             this.bookClassButton.Name = "bookClassButton";
             this.bookClassButton.Size = new System.Drawing.Size(179, 41);
             this.bookClassButton.TabIndex = 15;
@@ -145,7 +145,7 @@
             // clearButton
             // 
             this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearButton.Location = new System.Drawing.Point(434, 514);
+            this.clearButton.Location = new System.Drawing.Point(456, 514);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(179, 41);
             this.clearButton.TabIndex = 16;
@@ -154,7 +154,7 @@
             // 
             // gymID_TextBox
             // 
-            this.gymID_TextBox.Location = new System.Drawing.Point(275, 151);
+            this.gymID_TextBox.Location = new System.Drawing.Point(298, 151);
             this.gymID_TextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gymID_TextBox.Name = "gymID_TextBox";
             this.gymID_TextBox.Size = new System.Drawing.Size(185, 22);
@@ -194,7 +194,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(430, 209);
+            this.label5.Location = new System.Drawing.Point(452, 209);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(139, 24);
             this.label5.TabIndex = 64;
@@ -225,7 +225,7 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(435, 242);
+            this.monthCalendar1.Location = new System.Drawing.Point(457, 242);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 68;
             // 
@@ -236,7 +236,7 @@
             this.groupBox1.Controls.Add(this.radioSpinWed);
             this.groupBox1.Location = new System.Drawing.Point(75, 242);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(309, 97);
+            this.groupBox1.Size = new System.Drawing.Size(348, 97);
             this.groupBox1.TabIndex = 69;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = " ";
@@ -261,7 +261,7 @@
             this.groupBox2.Controls.Add(this.radioCardioThurs);
             this.groupBox2.Location = new System.Drawing.Point(75, 352);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(309, 97);
+            this.groupBox2.Size = new System.Drawing.Size(348, 97);
             this.groupBox2.TabIndex = 70;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = " ";
@@ -307,7 +307,7 @@
             this.groupBox3.Controls.Add(this.radioPilatesWed);
             this.groupBox3.Location = new System.Drawing.Point(75, 458);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(309, 97);
+            this.groupBox3.Size = new System.Drawing.Size(348, 97);
             this.groupBox3.TabIndex = 71;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = " ";
@@ -340,7 +340,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(804, 708);
+            this.ClientSize = new System.Drawing.Size(837, 659);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -360,6 +360,7 @@
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.helpButton);
             this.Name = "BookAClass";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Book a Class";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

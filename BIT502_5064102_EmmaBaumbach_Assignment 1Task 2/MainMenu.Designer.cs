@@ -71,6 +71,7 @@
             this.bookClassButton.TabIndex = 13;
             this.bookClassButton.Text = "Book a Class";
             this.bookClassButton.UseVisualStyleBackColor = true;
+            this.bookClassButton.Click += new System.EventHandler(this.bookClassButton_Click);
             // 
             // searchButton
             // 

@@ -655,6 +655,7 @@
             this.BookAClassButton.TabIndex = 87;
             this.BookAClassButton.Text = "Book a Class";
             this.BookAClassButton.UseVisualStyleBackColor = true;
+            this.BookAClassButton.Click += new System.EventHandler(this.BookAClassButton_Click);
             // 
             // HelpButton
             // 
@@ -738,7 +739,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.addressText);
             this.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddMember";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

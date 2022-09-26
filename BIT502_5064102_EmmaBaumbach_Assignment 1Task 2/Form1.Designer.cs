@@ -34,7 +34,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.extrasCostText = new System.Windows.Forms.TextBox();
@@ -82,7 +81,8 @@
             this.MainMenuButton = new System.Windows.Forms.Button();
             this.BookAClassButton = new System.Windows.Forms.Button();
             this.HelpButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -138,18 +138,6 @@
             this.label16.TabIndex = 30;
             this.label16.Text = "Payment frequency";
             this.label16.Click += new System.EventHandler(this.label16_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(428, 12);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(332, 110);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 36;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label22
             // 
@@ -656,6 +644,7 @@
             this.MainMenuButton.TabIndex = 86;
             this.MainMenuButton.Text = "Main Menu";
             this.MainMenuButton.UseVisualStyleBackColor = true;
+            this.MainMenuButton.Click += new System.EventHandler(this.MainMenuButton_Click);
             // 
             // BookAClassButton
             // 
@@ -678,6 +667,26 @@
             this.HelpButton.UseVisualStyleBackColor = true;
             this.HelpButton.Click += new System.EventHandler(this.HelpButton_Click);
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(505, 75);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(152, 29);
+            this.label14.TabIndex = 90;
+            this.label14.Text = "Add Member";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(483, 29);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(184, 46);
+            this.label17.TabIndex = 89;
+            this.label17.Text = "City Gym";
+            // 
             // AddMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -685,6 +694,8 @@
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1152, 979);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.HelpButton);
             this.Controls.Add(this.BookAClassButton);
             this.Controls.Add(this.MainMenuButton);
@@ -721,7 +732,6 @@
             this.Controls.Add(this.extrasCostText);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -734,7 +744,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "City Gym Membership Form";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -752,7 +761,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox extrasCostText;
@@ -800,6 +808,8 @@
         private System.Windows.Forms.Button MainMenuButton;
         private System.Windows.Forms.Button BookAClassButton;
         private System.Windows.Forms.Button HelpButton;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label17;
     }
 }
 

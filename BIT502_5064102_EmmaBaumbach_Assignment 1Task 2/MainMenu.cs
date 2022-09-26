@@ -36,5 +36,12 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         {
             Environment.Exit(0);
         }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+            string helpMessage = "Select an option or click the ‘Exit’ button to exit the application.";
+            string messageBoxTitle = "Main Menu Help";
+            MessageBox.Show(helpMessage, messageBoxTitle);
+        }
     }
 }

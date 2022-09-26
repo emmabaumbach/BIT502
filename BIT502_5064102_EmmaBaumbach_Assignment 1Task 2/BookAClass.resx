@@ -117,9 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="customerInfoBox.Text" xml:space="preserve">
-    <value>* Sign up for a 12 month contract to receive a $2 per week discount on any membership type
-** Sign up for a 24 month contract to receive a $5 per week discount on any membership type
-*** Receive a further 1% discount on your base membership rate when you opt to pay via Direct Debit</value>
-  </data>
 </root>

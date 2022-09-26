@@ -496,5 +496,11 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
             string messageBoxTitle = "Add Member Help";
             MessageBox.Show(helpMessage, messageBoxTitle);
         }
+
+        private void MainMenuButton_Click(object sender, EventArgs e)
+        {
+            new MainMenu().Show();
+
+        }
     }
 }

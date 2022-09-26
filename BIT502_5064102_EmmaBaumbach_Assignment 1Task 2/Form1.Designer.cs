@@ -1,6 +1,6 @@
 ﻿namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 {
-    partial class Form1
+    partial class Main_Form
     {
         /// <summary>
         /// Required designer variable.
@@ -28,59 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Form));
+            this.addressText = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.extrasCostText = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkDirectDebit = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.check247 = new System.Windows.Forms.CheckBox();
+            this.checkPT = new System.Windows.Forms.CheckBox();
+            this.checkDietConsult = new System.Windows.Forms.CheckBox();
+            this.checkOnlineVideo = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lastNameText = new System.Windows.Forms.TextBox();
+            this.cellPhoneText = new System.Windows.Forms.TextBox();
+            this.firstNameText = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.basicRadio = new System.Windows.Forms.RadioButton();
+            this.regularRadio = new System.Windows.Forms.RadioButton();
+            this.premiumRadio = new System.Windows.Forms.RadioButton();
+            this.month3Radio = new System.Windows.Forms.RadioButton();
+            this.month12Radio = new System.Windows.Forms.RadioButton();
+            this.month24Radio = new System.Windows.Forms.RadioButton();
+            this.radioPFWeekly = new System.Windows.Forms.RadioButton();
+            this.radioPFMonthly = new System.Windows.Forms.RadioButton();
+            this.customerInfoBox = new System.Windows.Forms.RichTextBox();
+            this.submitButton = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
+            this.cityText = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.calculateButton = new System.Windows.Forms.Button();
+            this.resetButton = new System.Windows.Forms.Button();
+            this.baseCostText = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.totalDiscountText = new System.Windows.Forms.TextBox();
+            this.netCostText = new System.Windows.Forms.TextBox();
+            this.regPayText = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.MainMenuButton = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox3
+            // addressText
             // 
-            this.textBox3.Location = new System.Drawing.Point(220, 188);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(899, 22);
-            this.textBox3.TabIndex = 3;
+            this.addressText.Location = new System.Drawing.Point(220, 188);
+            this.addressText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addressText.Name = "addressText";
+            this.addressText.Size = new System.Drawing.Size(899, 22);
+            this.addressText.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(50, 119);
+            this.label2.Location = new System.Drawing.Point(51, 119);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(165, 24);
             this.label2.TabIndex = 4;
@@ -91,85 +111,41 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(67, 152);
+            this.label3.Location = new System.Drawing.Point(67, 153);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "First name";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(684, 152);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 20);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Surname";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(150, 762);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(146, 17);
-            this.label14.TabIndex = 26;
-            this.label14.Text = "Membership total cost";
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(425, 745);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(443, 782);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(95, 17);
+            this.label15.Size = new System.Drawing.Size(168, 20);
             this.label15.TabIndex = 27;
-            this.label15.Text = "Extra charges";
+            this.label15.Text = "Extra weekly charges";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(353, 445);
+            this.label16.Location = new System.Drawing.Point(197, 11);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(152, 20);
             this.label16.TabIndex = 30;
             this.label16.Text = "Payment frequency";
             this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(80, 794);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(97, 17);
-            this.label17.TabIndex = 33;
-            this.label17.Text = "Total discount";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(80, 850);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(141, 17);
-            this.label18.TabIndex = 34;
-            this.label18.Text = "Net membership cost";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(80, 864);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(167, 17);
-            this.label19.TabIndex = 35;
-            this.label19.Text = "Regular payment amount";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(428, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(332, 109);
+            this.pictureBox1.Size = new System.Drawing.Size(332, 110);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
@@ -179,7 +155,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(67, 226);
+            this.label22.Location = new System.Drawing.Point(677, 226);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(88, 20);
             this.label22.TabIndex = 40;
@@ -195,18 +171,21 @@
             this.label23.TabIndex = 41;
             this.label23.Text = "Address";
             // 
-            // textBox7
+            // extrasCostText
             // 
-            this.textBox7.Location = new System.Drawing.Point(778, 152);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(341, 22);
-            this.textBox7.TabIndex = 43;
+            this.extrasCostText.Location = new System.Drawing.Point(636, 782);
+            this.extrasCostText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.extrasCostText.Name = "extrasCostText";
+            this.extrasCostText.Size = new System.Drawing.Size(124, 22);
+            this.extrasCostText.TabIndex = 43;
+            this.extrasCostText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.extrasCostText.TextChanged += new System.EventHandler(this.textBox7_TextChanged_1);
             // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(50, 273);
+            this.label24.Location = new System.Drawing.Point(51, 273);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(192, 24);
             this.label24.TabIndex = 44;
@@ -217,7 +196,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(67, 315);
+            this.label1.Location = new System.Drawing.Point(13, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(137, 20);
             this.label1.TabIndex = 45;
@@ -227,320 +206,597 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(50, 400);
+            this.label5.Location = new System.Drawing.Point(51, 400);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(164, 24);
             this.label5.TabIndex = 46;
             this.label5.Text = "Payment options";
             // 
-            // checkBox2
+            // checkDirectDebit
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(71, 445);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(136, 24);
-            this.checkBox2.TabIndex = 48;
-            this.checkBox2.Text = "Direct debit***";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.checkDirectDebit.AutoSize = true;
+            this.checkDirectDebit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkDirectDebit.Location = new System.Drawing.Point(71, 446);
+            this.checkDirectDebit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkDirectDebit.Name = "checkDirectDebit";
+            this.checkDirectDebit.Size = new System.Drawing.Size(136, 24);
+            this.checkDirectDebit.TabIndex = 48;
+            this.checkDirectDebit.Text = "Direct debit***";
+            this.checkDirectDebit.UseVisualStyleBackColor = true;
+            this.checkDirectDebit.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(50, 490);
+            this.label6.Location = new System.Drawing.Point(51, 490);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 24);
             this.label6.TabIndex = 49;
             this.label6.Text = "Extras";
             // 
-            // checkBox1
+            // check247
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(71, 531);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(202, 24);
-            this.checkBox1.TabIndex = 50;
-            this.checkBox1.Text = "24/7 Access ($1/week)";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.check247.AutoSize = true;
+            this.check247.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check247.Location = new System.Drawing.Point(71, 530);
+            this.check247.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.check247.Name = "check247";
+            this.check247.Size = new System.Drawing.Size(202, 24);
+            this.check247.TabIndex = 50;
+            this.check247.Text = "24/7 Access ($1/week)";
+            this.check247.UseVisualStyleBackColor = true;
+            this.check247.CheckedChanged += new System.EventHandler(this.check247_CheckedChanged);
             // 
-            // checkBox3
+            // checkPT
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(511, 561);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(244, 24);
-            this.checkBox3.TabIndex = 51;
-            this.checkBox3.Text = "Personal training ($20/week)";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkPT.AutoSize = true;
+            this.checkPT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkPT.Location = new System.Drawing.Point(511, 561);
+            this.checkPT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkPT.Name = "checkPT";
+            this.checkPT.Size = new System.Drawing.Size(244, 24);
+            this.checkPT.TabIndex = 51;
+            this.checkPT.Text = "Personal training ($20/week)";
+            this.checkPT.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // checkDietConsult
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(511, 531);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(244, 24);
-            this.checkBox4.TabIndex = 52;
-            this.checkBox4.Text = "Diet consultation ($20/week)";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkDietConsult.AutoSize = true;
+            this.checkDietConsult.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkDietConsult.Location = new System.Drawing.Point(511, 530);
+            this.checkDietConsult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkDietConsult.Name = "checkDietConsult";
+            this.checkDietConsult.Size = new System.Drawing.Size(244, 24);
+            this.checkDietConsult.TabIndex = 52;
+            this.checkDietConsult.Text = "Diet consultation ($20/week)";
+            this.checkDietConsult.UseVisualStyleBackColor = true;
+            this.checkDietConsult.CheckedChanged += new System.EventHandler(this.checkDietConsult_CheckedChanged);
             // 
-            // checkBox5
+            // checkOnlineVideo
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.Location = new System.Drawing.Point(71, 561);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(341, 24);
-            this.checkBox5.TabIndex = 53;
-            this.checkBox5.Text = "Access to online fitness videos ($2/week)";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkOnlineVideo.AutoSize = true;
+            this.checkOnlineVideo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkOnlineVideo.Location = new System.Drawing.Point(71, 561);
+            this.checkOnlineVideo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkOnlineVideo.Name = "checkOnlineVideo";
+            this.checkOnlineVideo.Size = new System.Drawing.Size(341, 24);
+            this.checkOnlineVideo.TabIndex = 53;
+            this.checkOnlineVideo.Text = "Access to online fitness videos ($2/week)";
+            this.checkOnlineVideo.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(67, 360);
+            this.label7.Location = new System.Drawing.Point(12, 7);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(73, 20);
             this.label7.TabIndex = 54;
             this.label7.Text = "Duration";
             // 
-            // textBox2
+            // lastNameText
             // 
-            this.textBox2.Location = new System.Drawing.Point(778, 226);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(341, 22);
-            this.textBox2.TabIndex = 56;
+            this.lastNameText.Location = new System.Drawing.Point(779, 153);
+            this.lastNameText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lastNameText.Name = "lastNameText";
+            this.lastNameText.Size = new System.Drawing.Size(341, 22);
+            this.lastNameText.TabIndex = 56;
             // 
-            // textBox5
+            // cellPhoneText
             // 
-            this.textBox5.Location = new System.Drawing.Point(221, 150);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(341, 22);
-            this.textBox5.TabIndex = 57;
+            this.cellPhoneText.Location = new System.Drawing.Point(777, 226);
+            this.cellPhoneText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cellPhoneText.Name = "cellPhoneText";
+            this.cellPhoneText.Size = new System.Drawing.Size(343, 22);
+            this.cellPhoneText.TabIndex = 57;
             // 
-            // textBox1
+            // firstNameText
             // 
-            this.textBox1.Location = new System.Drawing.Point(221, 226);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(341, 22);
-            this.textBox1.TabIndex = 58;
+            this.firstNameText.Location = new System.Drawing.Point(220, 153);
+            this.firstNameText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.firstNameText.Name = "firstNameText";
+            this.firstNameText.Size = new System.Drawing.Size(341, 22);
+            this.firstNameText.TabIndex = 58;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(50, 738);
+            this.label8.Location = new System.Drawing.Point(51, 738);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(94, 24);
             this.label8.TabIndex = 59;
             this.label8.Text = "Staff only";
             // 
-            // radioButton1
+            // basicRadio
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(220, 313);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(160, 24);
-            this.radioButton1.TabIndex = 60;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Basic ($10/week)";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.basicRadio.AutoSize = true;
+            this.basicRadio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.basicRadio.Location = new System.Drawing.Point(184, 12);
+            this.basicRadio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.basicRadio.Name = "basicRadio";
+            this.basicRadio.Size = new System.Drawing.Size(160, 24);
+            this.basicRadio.TabIndex = 60;
+            this.basicRadio.TabStop = true;
+            this.basicRadio.Text = "Basic ($10/week)";
+            this.basicRadio.UseVisualStyleBackColor = true;
+            this.basicRadio.CheckedChanged += new System.EventHandler(this.radioBasic_CheckedChanged);
             // 
-            // radioButton2
+            // regularRadio
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(778, 315);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(184, 24);
-            this.radioButton2.TabIndex = 61;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Premium ($20/week)";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.regularRadio.AutoSize = true;
+            this.regularRadio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.regularRadio.Location = new System.Drawing.Point(456, 12);
+            this.regularRadio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.regularRadio.Name = "regularRadio";
+            this.regularRadio.Size = new System.Drawing.Size(175, 24);
+            this.regularRadio.TabIndex = 61;
+            this.regularRadio.TabStop = true;
+            this.regularRadio.Text = "Regular ($15/week)";
+            this.regularRadio.UseVisualStyleBackColor = true;
+            this.regularRadio.CheckedChanged += new System.EventHandler(this.radioRegular_CheckedChanged);
             // 
-            // radioButton3
+            // premiumRadio
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(511, 315);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(175, 24);
-            this.radioButton3.TabIndex = 62;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Regular ($15/week)";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            this.premiumRadio.AutoSize = true;
+            this.premiumRadio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.premiumRadio.Location = new System.Drawing.Point(723, 12);
+            this.premiumRadio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.premiumRadio.Name = "premiumRadio";
+            this.premiumRadio.Size = new System.Drawing.Size(184, 24);
+            this.premiumRadio.TabIndex = 62;
+            this.premiumRadio.TabStop = true;
+            this.premiumRadio.Text = "Premium ($20/week)";
+            this.premiumRadio.UseVisualStyleBackColor = true;
+            this.premiumRadio.CheckedChanged += new System.EventHandler(this.radioPremium_CheckedChanged);
             // 
-            // radioButton4
+            // month3Radio
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(220, 361);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(99, 24);
-            this.radioButton4.TabIndex = 63;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "3 months";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.month3Radio.AutoSize = true;
+            this.month3Radio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.month3Radio.Location = new System.Drawing.Point(184, 9);
+            this.month3Radio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.month3Radio.Name = "month3Radio";
+            this.month3Radio.Size = new System.Drawing.Size(99, 24);
+            this.month3Radio.TabIndex = 63;
+            this.month3Radio.TabStop = true;
+            this.month3Radio.Text = "3 months";
+            this.month3Radio.UseVisualStyleBackColor = true;
+            this.month3Radio.CheckedChanged += new System.EventHandler(this.radioD3Month_CheckedChanged);
             // 
-            // radioButton5
+            // month12Radio
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(511, 361);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(114, 24);
-            this.radioButton5.TabIndex = 64;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "12 months*";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.month12Radio.AutoSize = true;
+            this.month12Radio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.month12Radio.Location = new System.Drawing.Point(456, 9);
+            this.month12Radio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.month12Radio.Name = "month12Radio";
+            this.month12Radio.Size = new System.Drawing.Size(114, 24);
+            this.month12Radio.TabIndex = 64;
+            this.month12Radio.TabStop = true;
+            this.month12Radio.Text = "12 months*";
+            this.month12Radio.UseVisualStyleBackColor = true;
+            this.month12Radio.CheckedChanged += new System.EventHandler(this.radioD12Month_CheckedChanged);
             // 
-            // radioButton6
+            // month24Radio
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(778, 358);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(120, 24);
-            this.radioButton6.TabIndex = 65;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "24 months**";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.month24Radio.AutoSize = true;
+            this.month24Radio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.month24Radio.Location = new System.Drawing.Point(723, 6);
+            this.month24Radio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.month24Radio.Name = "month24Radio";
+            this.month24Radio.Size = new System.Drawing.Size(120, 24);
+            this.month24Radio.TabIndex = 65;
+            this.month24Radio.TabStop = true;
+            this.month24Radio.Text = "24 months**";
+            this.month24Radio.UseVisualStyleBackColor = true;
+            this.month24Radio.CheckedChanged += new System.EventHandler(this.radioD24Month_CheckedChanged);
             // 
-            // radioButton7
+            // radioPFWeekly
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(511, 444);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(114, 24);
-            this.radioButton7.TabIndex = 66;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "12 months*";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioPFWeekly.AutoSize = true;
+            this.radioPFWeekly.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioPFWeekly.Location = new System.Drawing.Point(383, 11);
+            this.radioPFWeekly.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.radioPFWeekly.Name = "radioPFWeekly";
+            this.radioPFWeekly.Size = new System.Drawing.Size(84, 24);
+            this.radioPFWeekly.TabIndex = 66;
+            this.radioPFWeekly.TabStop = true;
+            this.radioPFWeekly.Text = "Weekly";
+            this.radioPFWeekly.UseVisualStyleBackColor = true;
+            this.radioPFWeekly.CheckedChanged += new System.EventHandler(this.radioPayWeekly_CheckedChanged);
             // 
-            // radioButton8
+            // radioPFMonthly
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.Location = new System.Drawing.Point(778, 444);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(114, 24);
-            this.radioButton8.TabIndex = 67;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "12 months*";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.radioPFMonthly.AutoSize = true;
+            this.radioPFMonthly.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioPFMonthly.Location = new System.Drawing.Point(517, 11);
+            this.radioPFMonthly.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.radioPFMonthly.Name = "radioPFMonthly";
+            this.radioPFMonthly.Size = new System.Drawing.Size(88, 24);
+            this.radioPFMonthly.TabIndex = 67;
+            this.radioPFMonthly.TabStop = true;
+            this.radioPFMonthly.Text = "Monthly";
+            this.radioPFMonthly.UseVisualStyleBackColor = true;
+            this.radioPFMonthly.CheckedChanged += new System.EventHandler(this.radioPayMonthly_CheckedChanged);
             // 
-            // richTextBox1
+            // customerInfoBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(43, 611);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(1048, 85);
-            this.richTextBox1.TabIndex = 68;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.customerInfoBox.BackColor = System.Drawing.SystemColors.Control;
+            this.customerInfoBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customerInfoBox.Location = new System.Drawing.Point(125, 624);
+            this.customerInfoBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.customerInfoBox.Name = "customerInfoBox";
+            this.customerInfoBox.ReadOnly = true;
+            this.customerInfoBox.Size = new System.Drawing.Size(817, 70);
+            this.customerInfoBox.TabIndex = 68;
+            this.customerInfoBox.Text = resources.GetString("customerInfoBox.Text");
+            this.customerInfoBox.WordWrap = false;
+            this.customerInfoBox.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged_2);
             // 
-            // Form1
+            // submitButton
+            // 
+            this.submitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submitButton.Location = new System.Drawing.Point(681, 875);
+            this.submitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.submitButton.Name = "submitButton";
+            this.submitButton.Size = new System.Drawing.Size(117, 52);
+            this.submitButton.TabIndex = 69;
+            this.submitButton.Text = "Submit";
+            this.submitButton.UseVisualStyleBackColor = true;
+            this.submitButton.Click += new System.EventHandler(this.ButtonSubmit);
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.Location = new System.Drawing.Point(1053, 875);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(117, 52);
+            this.buttonExit.TabIndex = 70;
+            this.buttonExit.Text = "Exit";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // cityText
+            // 
+            this.cityText.Location = new System.Drawing.Point(220, 224);
+            this.cityText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cityText.Name = "cityText";
+            this.cityText.Size = new System.Drawing.Size(341, 22);
+            this.cityText.TabIndex = 71;
+            this.cityText.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(811, 782);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(169, 20);
+            this.label9.TabIndex = 72;
+            this.label9.Text = "Total weekly discount";
+            // 
+            // calculateButton
+            // 
+            this.calculateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculateButton.Location = new System.Drawing.Point(805, 875);
+            this.calculateButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.calculateButton.Name = "calculateButton";
+            this.calculateButton.Size = new System.Drawing.Size(117, 52);
+            this.calculateButton.TabIndex = 74;
+            this.calculateButton.Text = "Calculate";
+            this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Click += new System.EventHandler(this.ButtonCalculate);
+            // 
+            // resetButton
+            // 
+            this.resetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetButton.Location = new System.Drawing.Point(929, 875);
+            this.resetButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.resetButton.Name = "resetButton";
+            this.resetButton.Size = new System.Drawing.Size(117, 52);
+            this.resetButton.TabIndex = 75;
+            this.resetButton.Text = "Reset";
+            this.resetButton.UseVisualStyleBackColor = true;
+            this.resetButton.Click += new System.EventHandler(this.ButtonReset_Click);
+            // 
+            // baseCostText
+            // 
+            this.baseCostText.Location = new System.Drawing.Point(261, 782);
+            this.baseCostText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.baseCostText.Name = "baseCostText";
+            this.baseCostText.Size = new System.Drawing.Size(124, 22);
+            this.baseCostText.TabIndex = 76;
+            this.baseCostText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.baseCostText.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(67, 782);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(182, 20);
+            this.label10.TabIndex = 77;
+            this.label10.Text = "Base membership cost";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(415, 828);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(195, 20);
+            this.label11.TabIndex = 78;
+            this.label11.Text = "Regular payment amount";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(67, 828);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(169, 20);
+            this.label12.TabIndex = 79;
+            this.label12.Text = "Net membership cost";
+            // 
+            // totalDiscountText
+            // 
+            this.totalDiscountText.Location = new System.Drawing.Point(995, 780);
+            this.totalDiscountText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.totalDiscountText.Name = "totalDiscountText";
+            this.totalDiscountText.Size = new System.Drawing.Size(124, 22);
+            this.totalDiscountText.TabIndex = 80;
+            this.totalDiscountText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // netCostText
+            // 
+            this.netCostText.Location = new System.Drawing.Point(261, 830);
+            this.netCostText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.netCostText.Name = "netCostText";
+            this.netCostText.Size = new System.Drawing.Size(124, 22);
+            this.netCostText.TabIndex = 81;
+            this.netCostText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.netCostText.TextChanged += new System.EventHandler(this.netCost_TextChanged);
+            // 
+            // regPayText
+            // 
+            this.regPayText.Location = new System.Drawing.Point(636, 830);
+            this.regPayText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.regPayText.Name = "regPayText";
+            this.regPayText.Size = new System.Drawing.Size(124, 22);
+            this.regPayText.TabIndex = 82;
+            this.regPayText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.regPayText.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.month24Radio);
+            this.panel1.Controls.Add(this.month12Radio);
+            this.panel1.Controls.Add(this.month3Radio);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Location = new System.Drawing.Point(55, 352);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1063, 48);
+            this.panel1.TabIndex = 83;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.radioPFMonthly);
+            this.panel2.Controls.Add(this.radioPFWeekly);
+            this.panel2.Controls.Add(this.label16);
+            this.panel2.Location = new System.Drawing.Point(261, 434);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(857, 55);
+            this.panel2.TabIndex = 84;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(696, 153);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(76, 20);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Surname";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(68, 226);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(38, 20);
+            this.label13.TabIndex = 85;
+            this.label13.Text = "City";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.basicRadio);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.regularRadio);
+            this.panel3.Controls.Add(this.premiumRadio);
+            this.panel3.Location = new System.Drawing.Point(55, 304);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1063, 48);
+            this.panel3.TabIndex = 84;
+            // 
+            // MainMenuButton
+            // 
+            this.MainMenuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MainMenuButton.Location = new System.Drawing.Point(508, 969);
+            this.MainMenuButton.Name = "MainMenuButton";
+            this.MainMenuButton.Size = new System.Drawing.Size(117, 52);
+            this.MainMenuButton.TabIndex = 86;
+            this.MainMenuButton.Text = "Main Menu";
+            this.MainMenuButton.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(262, 969);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 87;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(309, 969);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 88;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Honeydew;
+            this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1183, 876);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.radioButton8);
-            this.Controls.Add(this.radioButton7);
-            this.Controls.Add(this.radioButton6);
-            this.Controls.Add(this.radioButton5);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.ClientSize = new System.Drawing.Size(1224, 1055);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.MainMenuButton);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.regPayText);
+            this.Controls.Add(this.cityText);
+            this.Controls.Add(this.netCostText);
+            this.Controls.Add(this.totalDiscountText);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.baseCostText);
+            this.Controls.Add(this.resetButton);
+            this.Controls.Add(this.calculateButton);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.buttonExit);
+            this.Controls.Add(this.submitButton);
+            this.Controls.Add(this.customerInfoBox);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.firstNameText);
+            this.Controls.Add(this.cellPhoneText);
+            this.Controls.Add(this.lastNameText);
+            this.Controls.Add(this.checkOnlineVideo);
+            this.Controls.Add(this.checkDietConsult);
+            this.Controls.Add(this.checkPT);
+            this.Controls.Add(this.check247);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkDirectDebit);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.label24);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.extrasCostText);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox3);
-            this.DoubleBuffered = true;
+            this.Controls.Add(this.addressText);
             this.ForeColor = System.Drawing.SystemColors.InfoText;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Main_Form";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.Text = "City Gym Membership Form";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox addressText;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox extrasCostText;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkDirectDebit;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox check247;
+        private System.Windows.Forms.CheckBox checkPT;
+        private System.Windows.Forms.CheckBox checkDietConsult;
+        private System.Windows.Forms.CheckBox checkOnlineVideo;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox lastNameText;
+        private System.Windows.Forms.TextBox cellPhoneText;
+        private System.Windows.Forms.TextBox firstNameText;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RadioButton basicRadio;
+        private System.Windows.Forms.RadioButton regularRadio;
+        private System.Windows.Forms.RadioButton premiumRadio;
+        private System.Windows.Forms.RadioButton month3Radio;
+        private System.Windows.Forms.RadioButton month12Radio;
+        private System.Windows.Forms.RadioButton month24Radio;
+        private System.Windows.Forms.RadioButton radioPFWeekly;
+        private System.Windows.Forms.RadioButton radioPFMonthly;
+        private System.Windows.Forms.RichTextBox customerInfoBox;
+        private System.Windows.Forms.Button submitButton;
+        private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.TextBox cityText;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button calculateButton;
+        private System.Windows.Forms.Button resetButton;
+        private System.Windows.Forms.TextBox baseCostText;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox totalDiscountText;
+        private System.Windows.Forms.TextBox netCostText;
+        private System.Windows.Forms.TextBox regPayText;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button MainMenuButton;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 

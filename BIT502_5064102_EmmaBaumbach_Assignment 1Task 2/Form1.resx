@@ -485,10 +485,9 @@
         RK5CYII=
 </value>
   </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
+  <data name="customerInfoBox.Text" xml:space="preserve">
     <value>* Sign up for a 12 month contract to receive a $2 per week discount on any membership type
 ** Sign up for a 24 month contract to receive a $5 per week discount on any membership type
-*** Receive a further 1% discount on your base membership cost by opting to pay via Direct Debit
-</value>
+*** Receive a further 1% discount on your base membership rate when you opt to pay via Direct Debit</value>
   </data>
 </root>

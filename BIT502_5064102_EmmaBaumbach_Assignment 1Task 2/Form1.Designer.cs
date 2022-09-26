@@ -1,6 +1,6 @@
 ﻿namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 {
-    partial class Main_Form
+    partial class AddMember
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Form));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddMember));
             this.addressText = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -458,10 +458,10 @@
             // submitButton
             // 
             this.submitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.submitButton.Location = new System.Drawing.Point(384, 698);
+            this.submitButton.Location = new System.Drawing.Point(328, 701);
             this.submitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.submitButton.Name = "submitButton";
-            this.submitButton.Size = new System.Drawing.Size(117, 52);
+            this.submitButton.Size = new System.Drawing.Size(160, 41);
             this.submitButton.TabIndex = 69;
             this.submitButton.Text = "Submit";
             this.submitButton.UseVisualStyleBackColor = true;
@@ -470,10 +470,10 @@
             // buttonExit
             // 
             this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonExit.Location = new System.Drawing.Point(1003, 888);
+            this.buttonExit.Location = new System.Drawing.Point(958, 901);
             this.buttonExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(117, 52);
+            this.buttonExit.Size = new System.Drawing.Size(160, 41);
             this.buttonExit.TabIndex = 70;
             this.buttonExit.Text = "Exit";
             this.buttonExit.UseVisualStyleBackColor = true;
@@ -501,10 +501,10 @@
             // calculateButton
             // 
             this.calculateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculateButton.Location = new System.Drawing.Point(507, 698);
+            this.calculateButton.Location = new System.Drawing.Point(525, 701);
             this.calculateButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.calculateButton.Name = "calculateButton";
-            this.calculateButton.Size = new System.Drawing.Size(118, 52);
+            this.calculateButton.Size = new System.Drawing.Size(161, 41);
             this.calculateButton.TabIndex = 74;
             this.calculateButton.Text = "Calculate";
             this.calculateButton.UseVisualStyleBackColor = true;
@@ -513,10 +513,10 @@
             // resetButton
             // 
             this.resetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resetButton.Location = new System.Drawing.Point(631, 698);
+            this.resetButton.Location = new System.Drawing.Point(723, 701);
             this.resetButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resetButton.Name = "resetButton";
-            this.resetButton.Size = new System.Drawing.Size(117, 52);
+            this.resetButton.Size = new System.Drawing.Size(160, 41);
             this.resetButton.TabIndex = 75;
             this.resetButton.Text = "Reset";
             this.resetButton.UseVisualStyleBackColor = true;
@@ -650,9 +650,9 @@
             // MainMenuButton
             // 
             this.MainMenuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MainMenuButton.Location = new System.Drawing.Point(633, 888);
+            this.MainMenuButton.Location = new System.Drawing.Point(366, 901);
             this.MainMenuButton.Name = "MainMenuButton";
-            this.MainMenuButton.Size = new System.Drawing.Size(117, 52);
+            this.MainMenuButton.Size = new System.Drawing.Size(160, 41);
             this.MainMenuButton.TabIndex = 86;
             this.MainMenuButton.Text = "Main Menu";
             this.MainMenuButton.UseVisualStyleBackColor = true;
@@ -660,9 +660,9 @@
             // BookAClassButton
             // 
             this.BookAClassButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BookAClassButton.Location = new System.Drawing.Point(756, 888);
+            this.BookAClassButton.Location = new System.Drawing.Point(563, 901);
             this.BookAClassButton.Name = "BookAClassButton";
-            this.BookAClassButton.Size = new System.Drawing.Size(117, 52);
+            this.BookAClassButton.Size = new System.Drawing.Size(160, 41);
             this.BookAClassButton.TabIndex = 87;
             this.BookAClassButton.Text = "Book a Class";
             this.BookAClassButton.UseVisualStyleBackColor = true;
@@ -670,21 +670,21 @@
             // HelpButton
             // 
             this.HelpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HelpButton.Location = new System.Drawing.Point(879, 888);
+            this.HelpButton.Location = new System.Drawing.Point(760, 901);
             this.HelpButton.Name = "HelpButton";
-            this.HelpButton.Size = new System.Drawing.Size(118, 52);
+            this.HelpButton.Size = new System.Drawing.Size(161, 41);
             this.HelpButton.TabIndex = 88;
             this.HelpButton.Text = "Help";
             this.HelpButton.UseVisualStyleBackColor = true;
             this.HelpButton.Click += new System.EventHandler(this.HelpButton_Click);
             // 
-            // Main_Form
+            // AddMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1145, 965);
+            this.ClientSize = new System.Drawing.Size(1152, 979);
             this.Controls.Add(this.HelpButton);
             this.Controls.Add(this.BookAClassButton);
             this.Controls.Add(this.MainMenuButton);
@@ -729,10 +729,10 @@
             this.Controls.Add(this.addressText);
             this.ForeColor = System.Drawing.SystemColors.InfoText;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Main_Form";
+            this.Name = "AddMember";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "City Gym Membership Form";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);

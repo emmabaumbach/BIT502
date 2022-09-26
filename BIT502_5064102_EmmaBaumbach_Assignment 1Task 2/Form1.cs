@@ -11,7 +11,7 @@ using System.IO;
 
 namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 {
-    public partial class Main_Form : Form
+    public partial class AddMember : Form
     {
         double duration = 0;
         double payFreq = 0;
@@ -200,7 +200,7 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
             wr.Close();
         }
 
-        public Main_Form()
+        public AddMember()
         {
             InitializeComponent();
         }

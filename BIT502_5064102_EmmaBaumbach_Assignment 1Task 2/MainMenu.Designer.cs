@@ -82,6 +82,7 @@
             this.searchButton.TabIndex = 12;
             this.searchButton.Text = "Search Members";
             this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // pictureBox1
             // 

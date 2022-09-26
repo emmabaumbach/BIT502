@@ -52,7 +52,7 @@
             // 
             // mainMenuButton
             // 
-            this.mainMenuButton.Location = new System.Drawing.Point(75, 543);
+            this.mainMenuButton.Location = new System.Drawing.Point(123, 544);
             this.mainMenuButton.Name = "mainMenuButton";
             this.mainMenuButton.Size = new System.Drawing.Size(182, 41);
             this.mainMenuButton.TabIndex = 0;
@@ -62,9 +62,9 @@
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(654, 620);
+            this.exitButton.Location = new System.Drawing.Point(499, 601);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(182, 41);
+            this.exitButton.Size = new System.Drawing.Size(179, 41);
             this.exitButton.TabIndex = 1;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
@@ -72,7 +72,7 @@
             // 
             // addMemberButton
             // 
-            this.addMemberButton.Location = new System.Drawing.Point(263, 543);
+            this.addMemberButton.Location = new System.Drawing.Point(311, 544);
             this.addMemberButton.Name = "addMemberButton";
             this.addMemberButton.Size = new System.Drawing.Size(182, 41);
             this.addMemberButton.TabIndex = 2;
@@ -101,7 +101,7 @@
             // 
             // bookClassButton
             // 
-            this.bookClassButton.Location = new System.Drawing.Point(451, 543);
+            this.bookClassButton.Location = new System.Drawing.Point(499, 544);
             this.bookClassButton.Name = "bookClassButton";
             this.bookClassButton.Size = new System.Drawing.Size(179, 41);
             this.bookClassButton.TabIndex = 5;
@@ -111,7 +111,7 @@
             // 
             // helpButton
             // 
-            this.helpButton.Location = new System.Drawing.Point(654, 573);
+            this.helpButton.Location = new System.Drawing.Point(311, 601);
             this.helpButton.Name = "helpButton";
             this.helpButton.Size = new System.Drawing.Size(182, 41);
             this.helpButton.TabIndex = 6;
@@ -151,11 +151,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(337, 55);
+            this.label2.Location = new System.Drawing.Point(328, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(154, 29);
+            this.label2.Size = new System.Drawing.Size(197, 29);
             this.label2.TabIndex = 68;
-            this.label2.Text = "Book a Class";
+            this.label2.Text = "Search Members";
             // 
             // label1
             // 
@@ -249,7 +249,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(848, 673);
+            this.ClientSize = new System.Drawing.Size(757, 659);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.radioMemType);
             this.Controls.Add(this.radioFirstName);
@@ -271,7 +271,7 @@
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.mainMenuButton);
             this.Name = "SearchMembers";
-            this.Text = "SearchMembers";
+            this.Text = "Search Members";
             this.ResumeLayout(false);
             this.PerformLayout();
 

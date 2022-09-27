@@ -13,6 +13,7 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 {
     public partial class AddMember : Form
     {
+        // Sets amounts to zero
         double duration = 0;
         double payFreq = 0;
         double baseCost = 0;
@@ -37,15 +38,18 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
             // Calculates the total weekly discount 
             double totalDis = 0;
 
-            if (duration == 52) // $2/week discount overall if user selects 12 month/52 week term
+            if (duration == 52) 
+            // $2/week discount overall if user selects 12 month/52 week term
             {
                 totalDis += 2;
             }
-            if (duration == 104) // $5/week discount overall if user selects 24 month/104 week term
+            if (duration == 104)
+            // $5/week discount overall if user selects 24 month/104 week term
             {
                 totalDis += 5;
             }
-            if (directDebit) // 1% discount if user selects direct debit
+            if (directDebit) 
+            // 1% discount if user selects direct debit
             {
                 totalDis += baseCost * 0.01;
             }
@@ -56,77 +60,94 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
             // Calculates total weekly extras
 
             double extraWeeklyCharge = 0;
-            if (access24_7) // 24/7 access extra 
+            if (access24_7) 
+            // 24/7 access extra 
             {
                 extraWeeklyCharge += 1;
             }
-            if (onlineVideos) // Online video access extra
+            if (onlineVideos) 
+            // Online video access extra
             {
                 extraWeeklyCharge += 2;
             }
-            if (dietConsult) // Diet consulation extra
+            if (dietConsult) 
+            // Diet consulation extra
             {
                 extraWeeklyCharge += 20;
             }
-            if (personalTraining) // Personal training extra
+            if (personalTraining) 
+            // Personal training extra
             {
                 extraWeeklyCharge += 20;
             }
             return extraWeeklyCharge;
         }
 
-        private void SubmitData() // Stores new member information to a text file
+        private void SubmitData() 
+        // Stores new member information to a text file
         {
-            var Error = CheckErrors(); // Checks user input for errors
+            var Error = CheckErrors(); 
+            // Checks user input for errors
 
 
-            if (Error == 1) // Presents a message to the user while blocking other actions until the user acknowledges
+            if (Error == 1) 
+            // Presents a message to the user while blocking other actions until the user acknowledges
             {
                 MessageBox.Show("You are missing some details in the form. Please try again.");
             }
-            else if (Error == 2) // Presents a message to user that their details are incorrect format
+            else if (Error == 2) 
+            // Presents a message to user that their details are incorrect format
             {
                 MessageBox.Show("Numerical format required. Please try again");
             }
             else
             {
-                SaveForm(); // Saves form to text file
-                ReturnColour(); // If user input is in required format, error level colour is removed
+                SaveForm(); 
+                // Saves form to text file
+                ReturnColour(); 
+                // If user input is in required format, error level colour is removed
                 MessageBox.Show("Thank you, your registration form has been submitted successfully.");
             }
 
         }
-        private int CheckErrors() // Check user input for errors
+        private int CheckErrors() 
+        // Check user input for errors
         {
             var Error = 0;
 
-            if (firstNameText.Text.Length == 0) // If first name details are missing then error and highlight the fields with missing details
+            if (firstNameText.Text.Length == 0) 
+            // If first name details are missing then error and highlight the fields with missing details
             {
                 Error = 1;
                 firstNameText.BackColor = Color.DarkSalmon;
             }
-            if (lastNameText.Text.Length == 0) // If last name details are missing then error and highlight the fields with missing details
+            if (lastNameText.Text.Length == 0) 
+            // If last name details are missing then error and highlight the fields with missing details
             {
                 Error = 1;
                 lastNameText.BackColor = Color.DarkSalmon;
             }
-            if (addressText.Text.Length == 0) // If address details are missing then error and highlight the fields with missing details
+            if (addressText.Text.Length == 0) 
+            // If address details are missing then error and highlight the fields with missing details
             {
                 Error = 1;
                 addressText.BackColor = Color.DarkSalmon;
             }
-            if (cityText.Text.Length == 0) // If city details are missing then error and highlight the fields with missing details
+            if (cityText.Text.Length == 0) 
+            // If city details are missing then error and highlight the fields with missing details
             {
                 Error = 1;
                 cityText.BackColor = Color.DarkSalmon;
             }
-            if (cellPhoneText.Text.Length == 0) // If contact details are missing then error and highlight the fields with missing details
+            if (cellPhoneText.Text.Length == 0) 
+            // If contact details are missing then error and highlight the fields with missing details
             {
                 Error = 1;
                 cellPhoneText.BackColor = Color.DarkSalmon;
             }
 
-            var cellPhone = cellPhoneText.Text; // If contact details are not numerical then error and highlight the field
+            var cellPhone = cellPhoneText.Text; 
+            // If contact details are not numerical then error and highlight the field
             int cell;
             if (!int.TryParse(cellPhone, out cell))
             {
@@ -134,14 +155,16 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
                 cellPhoneText.BackColor = Color.DarkSalmon;
             }
 
-            if (panel3.Controls.OfType<RadioButton>().All(x => x.Checked == false)) // At least one membership radiobutton in panel3 is checked
+            if (panel3.Controls.OfType<RadioButton>().All(x => x.Checked == false)) 
+            // At least one membership radiobutton in panel3 is checked otherwise error level and highligted field
             {
                 Error = 1;
                 basicRadio.BackColor = Color.DarkSalmon;
                 regularRadio.BackColor = Color.DarkSalmon;
                 premiumRadio.BackColor = Color.DarkSalmon;
             }
-            if (panel1.Controls.OfType<RadioButton>().All(x => x.Checked == false)) // At least one duration radiobutton in panel1 is checked
+            if (panel1.Controls.OfType<RadioButton>().All(x => x.Checked == false))
+            // At least one duration radiobutton in panel1 is checked otherwise error level
             {
                 Error = 1;
                 month3Radio.BackColor = Color.DarkSalmon;
@@ -149,7 +172,8 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
                 month24Radio.BackColor = Color.DarkSalmon;
 
             }
-            if (panel2.Controls.OfType<RadioButton>().All(x => x.Checked == false)) // At least one payment frequency in panel2 is checked
+            if (panel2.Controls.OfType<RadioButton>().All(x => x.Checked == false))
+            // At least one payment frequency in panel2 is checked otherwise error level
             {
                 Error = 1;
                 radioPFWeekly.BackColor = Color.DarkSalmon;
@@ -157,7 +181,8 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
             }
             return Error;
         }
-        private void SaveForm() // Saves form to text file
+        private void SaveForm() 
+        // Saves form to text file
         {
             String membership = "";
 
@@ -174,7 +199,8 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
                 membership = "Premium";
             }
 
-            TextWriter wr = new StreamWriter("C:/Temp/NewMembership.txt"); // Writing to text file
+            TextWriter wr = new StreamWriter("C:/Temp/NewMembership.txt"); 
+            // Writing to text file
 
             wr.WriteLine("~ City Gym Membership Form ~");
             wr.WriteLine("");
@@ -310,17 +336,20 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 
         }
 
-        private void radioBasic_CheckedChanged(object sender, EventArgs e) // If radio button 'Basic' selected baseCost value = 10
+        private void radioBasic_CheckedChanged(object sender, EventArgs e) 
+        // If radio button 'Basic' selected baseCost value = 10
         {
             baseCost = 10;
         }
 
-        private void radioRegular_CheckedChanged(object sender, EventArgs e) // If radio button 'Regular' selected baseCost value = 15
+        private void radioRegular_CheckedChanged(object sender, EventArgs e) 
+        // If radio button 'Regular' selected baseCost value = 15
         {
             baseCost = 15;
         }
 
-        private void radioPremium_CheckedChanged(object sender, EventArgs e) // If radio button 'Premium' selected baseCost value = 20
+        private void radioPremium_CheckedChanged(object sender, EventArgs e) 
+        // If radio button 'Premium' selected baseCost value = 20
         {
             baseCost = 20;
         }
@@ -330,12 +359,14 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 
         }
 
-        private void ButtonSubmit(object sender, EventArgs e) // Calls the function to store new member information to a text file
+        private void ButtonSubmit(object sender, EventArgs e) 
+        // Calls the function to store new member information to a text file
         {
             SubmitData();
         }
 
-        public void radioPayWeekly_CheckedChanged(object sender, EventArgs e) // If radio button 'Weekly' selected, payfreq = 1 
+        public void radioPayWeekly_CheckedChanged(object sender, EventArgs e) 
+        // If radio button 'Weekly' selected, payyment frequency = 1 
         {
             payFreq = 1;
         }
@@ -345,12 +376,14 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 
         }
 
-        private void button2_Click(object sender, EventArgs e) // Exits the application
+        private void button2_Click(object sender, EventArgs e) 
+        // Exits the application
         {
             Environment.Exit(0);
         }
 
-        private void ReturnColour() // Removes all error colours
+        private void ReturnColour() 
+        // Removes all error colours
         {
             firstNameText.BackColor = Color.White;
             lastNameText.BackColor = Color.White;
@@ -367,7 +400,8 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
             radioPFMonthly.BackColor = Color.DarkSeaGreen;
         }
 
-        private void ButtonReset_Click(object sender, EventArgs e) // Resets all fields to empty, unclicked, unchecked, zeroes calculations and removes errors
+        private void ButtonReset_Click(object sender, EventArgs e) 
+        // Resets all fields to empty, unclicked, unchecked, zeroes calculations and removes error levels and colours
         {
             baseCost = 0;
             duration = 0;
@@ -427,7 +461,8 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
             // Regular payment amount either weekly or monthly 
             double regPay = netCost * payFreq;
 
-            extrasCostText.Text = "$" + Math.Round(extras);
+            // Displays rounded values to labelled textbox respectively
+            extrasCostText.Text = "$" + Math.Round(extras); 
             baseCostText.Text = "$" + Math.Round(baseCost);
             totalDiscountText.Text = "$" + Math.Round(totalDis, 2);
             netCostText.Text = "$" + Math.Round(netCost, 2);
@@ -440,18 +475,21 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         }
 
         public void radioD3Month_CheckedChanged(object sender, EventArgs e)
+        // 3 months = 12 weeks
         {
-            duration = 12; // 3 months = 12 weeks
+            duration = 12;
         }
 
         public void radioD12Month_CheckedChanged(object sender, EventArgs e)
+        // 12 months = 52 weeks
         {
-            duration = 52; // 12 months = 52 weeks
+            duration = 52; 
         }
 
         public void radioD24Month_CheckedChanged(object sender, EventArgs e)
+        // 24 months = 104 weeks
         {
-            duration = 104; // 24 months = 104 weeks
+            duration = 104;
         }
 
         private void netCost_TextChanged(object sender, EventArgs e)
@@ -460,8 +498,9 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         }
 
         public void radioPayMonthly_CheckedChanged(object sender, EventArgs e)
+        // if checked convert to weeks
         {
-            payFreq = 4; // if checked convert to weeks
+            payFreq = 4; 
 
         }
 
@@ -490,20 +529,23 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 
         }
 
-        private void HelpButton_Click(object sender, EventArgs e)
+        private void HelpButton_Click(object sender, EventArgs e)  
+        // Shows a messagebox with instructions and information about features on the page
         {
             string helpMessage = "Enter new member details, select mandatory options(membership type, duration, pay frequency), and select and extras (optional)." + Environment.NewLine + Environment.NewLine + "Selecting ‘Calculate’ will output amount details based on your selection." + Environment.NewLine + Environment.NewLine + "Click ‘Reset’ to start over, or ‘Submit’ to confirm new member details and submit to the database." + Environment.NewLine + Environment.NewLine + "Alternatively, ‘Main Menu’ will take you back to the main menu, ‘Book a Class’ will open a class booking screen, and the ‘Exit’ button will exit the application.";
             string messageBoxTitle = "Add Member Help";
             MessageBox.Show(helpMessage, messageBoxTitle);
         }
 
-        private void MainMenuButton_Click(object sender, EventArgs e)
+        private void MainMenuButton_Click(object sender, EventArgs e) 
+        // Opens Main Menu form
         {
             new MainMenu().Show();
 
         }
 
-        private void BookAClassButton_Click(object sender, EventArgs e)
+        private void BookAClassButton_Click(object sender, EventArgs e) 
+        // Opens Book a Class form
         {
             new BookAClass().Show();
         }

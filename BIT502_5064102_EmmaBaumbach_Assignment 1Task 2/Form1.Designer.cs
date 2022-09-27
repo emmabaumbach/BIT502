@@ -739,6 +739,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.addressText);
             this.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddMember";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;

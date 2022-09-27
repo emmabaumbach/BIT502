@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchMembers));
             this.mainMenuButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.addMemberButton = new System.Windows.Forms.Button();
@@ -270,6 +271,7 @@
             this.Controls.Add(this.addMemberButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.mainMenuButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SearchMembers";
             this.Text = "Search Members";
             this.ResumeLayout(false);

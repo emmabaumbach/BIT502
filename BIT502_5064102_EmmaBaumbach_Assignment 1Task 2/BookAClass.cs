@@ -28,6 +28,7 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         private void mainMenuButton_Click(object sender, EventArgs e)
         // Opens the Main Menu form
         {
+            
             new MainMenu().Show();
         }
 

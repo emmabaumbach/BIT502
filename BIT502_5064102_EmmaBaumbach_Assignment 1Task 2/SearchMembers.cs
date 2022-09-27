@@ -18,34 +18,40 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         }
 
         private void mainMenuButton_Click(object sender, EventArgs e)
+        // Opens Main Menu form
         {
             new MainMenu().Show();
         }
 
         private void addMemberButton_Click(object sender, EventArgs e)
+        // Opens Add Member form
         {
             new AddMember().Show();
         }
 
         private void bookClassButton_Click(object sender, EventArgs e)
+        // Opens Book a Class form
         {
             new BookAClass().Show();
         }
 
-        private void clearButton_Click(object sender, EventArgs e)
+        private void clearButton_Click(object sender, EventArgs e) 
+        // Clears search fields
         {
             nameText.Text = "";
             memTypeText.Text = "";
         }
 
-        private void helpButton_Click(object sender, EventArgs e)
+        private void helpButton_Click(object sender, EventArgs e) 
+        // Shows a messagebox with instructions and information about features on the page
         {
-            string helpMessage = "Help";
+            string helpMessage = "Search by member name and/or membership type and select ‘Search’." + Environment.NewLine + Environment.NewLine + "‘Clear’ will clear all fields." + Environment.NewLine + Environment.NewLine + "Use the Filter Results section to filter members by name or membership." + Environment.NewLine + Environment.NewLine + "Alternatively, ‘Main Menu’ will take you back to the main menu, ‘Book a Class’ will open a booking screen, and the ‘Exit’ button to exit the application.";
             string messageBoxTitle = "Search Members Help";
             MessageBox.Show(helpMessage, messageBoxTitle);
         }
 
-        private void exitButton_Click(object sender, EventArgs e)
+        private void exitButton_Click(object sender, EventArgs e) 
+        // Exits the application
         {
             Environment.Exit(0);
         }

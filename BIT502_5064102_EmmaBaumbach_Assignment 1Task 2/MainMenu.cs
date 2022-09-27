@@ -17,27 +17,25 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
             InitializeComponent();
         }
 
-        private void addMember_Click(object sender, EventArgs e)
-        {
-            new AddMember().Show();
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void addMember_Click_1(object sender, EventArgs e)
+        private void addMember_Click(object sender, EventArgs e)
+        // Opens Add Member form
         {
             new AddMember().Show();
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
+        // Exits the application
         {
             Environment.Exit(0);
         }
 
         private void helpButton_Click(object sender, EventArgs e)
+        // Shows a messagebox with instructions and information about features on the page
         {
             string helpMessage = "Select an option or click the ‘Exit’ button to exit the application.";
             string messageBoxTitle = "Main Menu Help";
@@ -45,11 +43,13 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         }
 
         private void bookClassButton_Click(object sender, EventArgs e)
+        // Opens Book a Class form
         {
             new BookAClass().Show();
         }
 
         private void searchButton_Click(object sender, EventArgs e)
+        // Opens Search Members form
         {
             new SearchMembers().Show();
         }

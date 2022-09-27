@@ -273,6 +273,7 @@
             this.Controls.Add(this.mainMenuButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SearchMembers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search Members";
             this.ResumeLayout(false);
             this.PerformLayout();

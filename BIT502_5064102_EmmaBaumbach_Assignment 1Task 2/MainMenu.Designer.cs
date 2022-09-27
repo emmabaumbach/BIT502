@@ -123,7 +123,7 @@
             this.addMember.TabIndex = 8;
             this.addMember.Text = "Add Member";
             this.addMember.UseVisualStyleBackColor = true;
-            this.addMember.Click += new System.EventHandler(this.addMember_Click_1);
+            this.addMember.Click += new System.EventHandler(this.addMember_Click);
             // 
             // MainMenu
             // 

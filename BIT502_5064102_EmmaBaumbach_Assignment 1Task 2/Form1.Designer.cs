@@ -809,7 +809,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button MainMenuButton;
         private System.Windows.Forms.Button BookAClassButton;
-        private System.Windows.Forms.Button HelpButton;
+        private new System.Windows.Forms.Button HelpButton;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label17;
     }

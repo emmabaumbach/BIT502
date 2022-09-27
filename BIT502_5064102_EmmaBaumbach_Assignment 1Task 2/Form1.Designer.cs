@@ -83,6 +83,7 @@
             this.HelpButton = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.searchButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -446,10 +447,10 @@
             // submitButton
             // 
             this.submitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.submitButton.Location = new System.Drawing.Point(328, 701);
+            this.submitButton.Location = new System.Drawing.Point(289, 708);
             this.submitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.submitButton.Name = "submitButton";
-            this.submitButton.Size = new System.Drawing.Size(160, 41);
+            this.submitButton.Size = new System.Drawing.Size(167, 34);
             this.submitButton.TabIndex = 69;
             this.submitButton.Text = "Submit";
             this.submitButton.UseVisualStyleBackColor = true;
@@ -458,10 +459,10 @@
             // buttonExit
             // 
             this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonExit.Location = new System.Drawing.Point(958, 901);
+            this.buttonExit.Location = new System.Drawing.Point(1010, 918);
             this.buttonExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(160, 41);
+            this.buttonExit.Size = new System.Drawing.Size(108, 34);
             this.buttonExit.TabIndex = 70;
             this.buttonExit.Text = "Exit";
             this.buttonExit.UseVisualStyleBackColor = true;
@@ -489,10 +490,10 @@
             // calculateButton
             // 
             this.calculateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculateButton.Location = new System.Drawing.Point(525, 701);
+            this.calculateButton.Location = new System.Drawing.Point(462, 708);
             this.calculateButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.calculateButton.Name = "calculateButton";
-            this.calculateButton.Size = new System.Drawing.Size(161, 41);
+            this.calculateButton.Size = new System.Drawing.Size(167, 34);
             this.calculateButton.TabIndex = 74;
             this.calculateButton.Text = "Calculate";
             this.calculateButton.UseVisualStyleBackColor = true;
@@ -501,10 +502,10 @@
             // resetButton
             // 
             this.resetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resetButton.Location = new System.Drawing.Point(723, 701);
+            this.resetButton.Location = new System.Drawing.Point(635, 708);
             this.resetButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resetButton.Name = "resetButton";
-            this.resetButton.Size = new System.Drawing.Size(160, 41);
+            this.resetButton.Size = new System.Drawing.Size(167, 34);
             this.resetButton.TabIndex = 75;
             this.resetButton.Text = "Reset";
             this.resetButton.UseVisualStyleBackColor = true;
@@ -638,9 +639,9 @@
             // MainMenuButton
             // 
             this.MainMenuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MainMenuButton.Location = new System.Drawing.Point(366, 901);
+            this.MainMenuButton.Location = new System.Drawing.Point(480, 898);
             this.MainMenuButton.Name = "MainMenuButton";
-            this.MainMenuButton.Size = new System.Drawing.Size(160, 41);
+            this.MainMenuButton.Size = new System.Drawing.Size(167, 34);
             this.MainMenuButton.TabIndex = 86;
             this.MainMenuButton.Text = "Main Menu";
             this.MainMenuButton.UseVisualStyleBackColor = true;
@@ -649,9 +650,9 @@
             // BookAClassButton
             // 
             this.BookAClassButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BookAClassButton.Location = new System.Drawing.Point(563, 901);
+            this.BookAClassButton.Location = new System.Drawing.Point(826, 898);
             this.BookAClassButton.Name = "BookAClassButton";
-            this.BookAClassButton.Size = new System.Drawing.Size(160, 41);
+            this.BookAClassButton.Size = new System.Drawing.Size(167, 34);
             this.BookAClassButton.TabIndex = 87;
             this.BookAClassButton.Text = "Book a Class";
             this.BookAClassButton.UseVisualStyleBackColor = true;
@@ -660,9 +661,9 @@
             // HelpButton
             // 
             this.HelpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HelpButton.Location = new System.Drawing.Point(760, 901);
+            this.HelpButton.Location = new System.Drawing.Point(1010, 879);
             this.HelpButton.Name = "HelpButton";
-            this.HelpButton.Size = new System.Drawing.Size(161, 41);
+            this.HelpButton.Size = new System.Drawing.Size(108, 34);
             this.HelpButton.TabIndex = 88;
             this.HelpButton.Text = "Help";
             this.HelpButton.UseVisualStyleBackColor = true;
@@ -688,6 +689,16 @@
             this.label17.TabIndex = 89;
             this.label17.Text = "City Gym";
             // 
+            // searchButton
+            // 
+            this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchButton.Location = new System.Drawing.Point(653, 898);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(167, 34);
+            this.searchButton.TabIndex = 92;
+            this.searchButton.Text = "Search Members";
+            this.searchButton.UseVisualStyleBackColor = true;
+            // 
             // AddMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -695,6 +706,7 @@
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1152, 979);
+            this.Controls.Add(this.searchButton);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.HelpButton);
@@ -812,6 +824,7 @@
         private new System.Windows.Forms.Button HelpButton;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button searchButton;
     }
 }
 

@@ -55,6 +55,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.pilatesCheck = new System.Windows.Forms.CheckBox();
             this.radioPilatesWed = new System.Windows.Forms.RadioButton();
+            this.addMemberButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -63,9 +64,9 @@
             // helpButton
             // 
             this.helpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.helpButton.Location = new System.Drawing.Point(420, 597);
+            this.helpButton.Location = new System.Drawing.Point(620, 595);
             this.helpButton.Name = "helpButton";
-            this.helpButton.Size = new System.Drawing.Size(179, 41);
+            this.helpButton.Size = new System.Drawing.Size(108, 34);
             this.helpButton.TabIndex = 0;
             this.helpButton.Text = "Help";
             this.helpButton.UseVisualStyleBackColor = true;
@@ -74,9 +75,9 @@
             // searchButton
             // 
             this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchButton.Location = new System.Drawing.Point(235, 597);
+            this.searchButton.Location = new System.Drawing.Point(232, 612);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(179, 41);
+            this.searchButton.Size = new System.Drawing.Size(167, 34);
             this.searchButton.TabIndex = 1;
             this.searchButton.Text = "Search Members";
             this.searchButton.UseVisualStyleBackColor = true;
@@ -85,9 +86,9 @@
             // exitButton
             // 
             this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitButton.Location = new System.Drawing.Point(606, 597);
+            this.exitButton.Location = new System.Drawing.Point(620, 636);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(179, 41);
+            this.exitButton.Size = new System.Drawing.Size(108, 34);
             this.exitButton.TabIndex = 2;
             this.exitButton.Text = "Exit ";
             this.exitButton.UseVisualStyleBackColor = true;
@@ -116,9 +117,9 @@
             // mainMenuButton
             // 
             this.mainMenuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainMenuButton.Location = new System.Drawing.Point(50, 597);
+            this.mainMenuButton.Location = new System.Drawing.Point(59, 612);
             this.mainMenuButton.Name = "mainMenuButton";
-            this.mainMenuButton.Size = new System.Drawing.Size(179, 41);
+            this.mainMenuButton.Size = new System.Drawing.Size(167, 34);
             this.mainMenuButton.TabIndex = 13;
             this.mainMenuButton.Text = "Main Menu";
             this.mainMenuButton.UseVisualStyleBackColor = true;
@@ -127,9 +128,9 @@
             // selectButton
             // 
             this.selectButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectButton.Location = new System.Drawing.Point(540, 141);
+            this.selectButton.Location = new System.Drawing.Point(620, 144);
             this.selectButton.Name = "selectButton";
-            this.selectButton.Size = new System.Drawing.Size(179, 41);
+            this.selectButton.Size = new System.Drawing.Size(108, 34);
             this.selectButton.TabIndex = 14;
             this.selectButton.Text = "Select";
             this.selectButton.UseVisualStyleBackColor = true;
@@ -137,9 +138,9 @@
             // bookClassButton
             // 
             this.bookClassButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bookClassButton.Location = new System.Drawing.Point(456, 467);
+            this.bookClassButton.Location = new System.Drawing.Point(432, 469);
             this.bookClassButton.Name = "bookClassButton";
-            this.bookClassButton.Size = new System.Drawing.Size(179, 41);
+            this.bookClassButton.Size = new System.Drawing.Size(168, 34);
             this.bookClassButton.TabIndex = 15;
             this.bookClassButton.Text = "Book Class";
             this.bookClassButton.UseVisualStyleBackColor = true;
@@ -147,19 +148,19 @@
             // clearButton
             // 
             this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearButton.Location = new System.Drawing.Point(456, 514);
+            this.clearButton.Location = new System.Drawing.Point(432, 509);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(179, 41);
+            this.clearButton.Size = new System.Drawing.Size(168, 34);
             this.clearButton.TabIndex = 16;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
             // 
             // gymID_TextBox
             // 
-            this.gymID_TextBox.Location = new System.Drawing.Point(298, 151);
+            this.gymID_TextBox.Location = new System.Drawing.Point(305, 151);
             this.gymID_TextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gymID_TextBox.Name = "gymID_TextBox";
-            this.gymID_TextBox.Size = new System.Drawing.Size(185, 22);
+            this.gymID_TextBox.Size = new System.Drawing.Size(271, 22);
             this.gymID_TextBox.TabIndex = 63;
             // 
             // label24
@@ -176,7 +177,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(69, 151);
+            this.label3.Location = new System.Drawing.Point(55, 153);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(193, 20);
             this.label3.TabIndex = 60;
@@ -196,7 +197,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(452, 209);
+            this.label5.Location = new System.Drawing.Point(425, 209);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(139, 24);
             this.label5.TabIndex = 64;
@@ -227,7 +228,8 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(457, 242);
+            this.monthCalendar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.monthCalendar1.Location = new System.Drawing.Point(432, 242);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 68;
             // 
@@ -236,7 +238,7 @@
             this.groupBox1.Controls.Add(this.radioSpinFri);
             this.groupBox1.Controls.Add(this.spinCheck);
             this.groupBox1.Controls.Add(this.radioSpinWed);
-            this.groupBox1.Location = new System.Drawing.Point(75, 242);
+            this.groupBox1.Location = new System.Drawing.Point(59, 242);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(348, 97);
             this.groupBox1.TabIndex = 69;
@@ -261,7 +263,7 @@
             this.groupBox2.Controls.Add(this.radioCardioFri);
             this.groupBox2.Controls.Add(this.cardioCheck);
             this.groupBox2.Controls.Add(this.radioCardioThurs);
-            this.groupBox2.Location = new System.Drawing.Point(75, 352);
+            this.groupBox2.Location = new System.Drawing.Point(59, 352);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(348, 97);
             this.groupBox2.TabIndex = 70;
@@ -307,7 +309,7 @@
             // 
             this.groupBox3.Controls.Add(this.pilatesCheck);
             this.groupBox3.Controls.Add(this.radioPilatesWed);
-            this.groupBox3.Location = new System.Drawing.Point(75, 458);
+            this.groupBox3.Location = new System.Drawing.Point(59, 458);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(348, 97);
             this.groupBox3.TabIndex = 71;
@@ -337,12 +339,24 @@
             this.radioPilatesWed.Text = "Wednesday - 6pm";
             this.radioPilatesWed.UseVisualStyleBackColor = true;
             // 
+            // addMemberButton
+            // 
+            this.addMemberButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addMemberButton.Location = new System.Drawing.Point(405, 612);
+            this.addMemberButton.Name = "addMemberButton";
+            this.addMemberButton.Size = new System.Drawing.Size(166, 34);
+            this.addMemberButton.TabIndex = 72;
+            this.addMemberButton.Text = "Add a Member";
+            this.addMemberButton.UseVisualStyleBackColor = true;
+            this.addMemberButton.Click += new System.EventHandler(this.addMemberButton_Click);
+            // 
             // BookAClass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(837, 659);
+            this.ClientSize = new System.Drawing.Size(805, 732);
+            this.Controls.Add(this.addMemberButton);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -404,5 +418,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.CheckBox pilatesCheck;
         private System.Windows.Forms.RadioButton radioPilatesWed;
+        private System.Windows.Forms.Button addMemberButton;
     }
 }

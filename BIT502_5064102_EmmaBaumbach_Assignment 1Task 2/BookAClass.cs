@@ -20,7 +20,7 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         private void helpButton_Click(object sender, EventArgs e)
         // Shows a messagebox with instructions and information about features on the page
         {
-            string helpMessage = "Enter a valid Membership ID to select a member." + Environment.NewLine + Environment.NewLine + "Once the user has been selected, choose the Fitness Class and preferred day/ time, followed by preferred week, then select ‘Book a Class’ or ‘Clear’ to start over." + Environment.NewLine + Environment.NewLine + "Alternatively, ‘Main Menu’ will take you back to the main menu, ‘Search’ will open a Database Search screen, and the ‘Exit’ button will exit the application.";
+            string helpMessage = "Enter a valid Membership ID to select a member." + Environment.NewLine + Environment.NewLine + "Once the user has been selected, choose the Fitness Class and preferred day/ time, followed by preferred week, then select the ‘Book Class’ button or ‘Clear’ to start over." + Environment.NewLine + Environment.NewLine + "Alternatively, ‘Main Menu’ will take you back to the main menu, 'Add a Member' will take you to the member registration form, ‘Search’ will open a Database Search screen, and the ‘Exit’ button will exit the application.";
             string helpBoxTitle = "Book a Class Help";
             MessageBox.Show(helpMessage, helpBoxTitle);
         }
@@ -46,6 +46,12 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         // Opens Search Members form
         {
             new SearchMembers().Show();
+        }
+
+        private void addMemberButton_Click(object sender, EventArgs e)
+        // Opens Add Member form
+        {
+            new AddMember().Show();
         }
     }
 }

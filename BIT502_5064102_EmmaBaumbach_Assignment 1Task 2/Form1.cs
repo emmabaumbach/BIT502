@@ -549,5 +549,10 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         {
             new BookAClass().Show();
         }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

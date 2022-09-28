@@ -43,7 +43,7 @@
             // ExitButton
             // 
             this.ExitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitButton.Location = new System.Drawing.Point(234, 249);
+            this.ExitButton.Location = new System.Drawing.Point(234, 265);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(108, 34);
             this.ExitButton.TabIndex = 15;
@@ -54,7 +54,7 @@
             // helpButton
             // 
             this.helpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.helpButton.Location = new System.Drawing.Point(234, 207);
+            this.helpButton.Location = new System.Drawing.Point(234, 223);
             this.helpButton.Name = "helpButton";
             this.helpButton.Size = new System.Drawing.Size(108, 34);
             this.helpButton.TabIndex = 14;
@@ -65,7 +65,7 @@
             // bookClassButton
             // 
             this.bookClassButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bookClassButton.Location = new System.Drawing.Point(24, 273);
+            this.bookClassButton.Location = new System.Drawing.Point(24, 289);
             this.bookClassButton.Name = "bookClassButton";
             this.bookClassButton.Size = new System.Drawing.Size(167, 34);
             this.bookClassButton.TabIndex = 13;
@@ -76,7 +76,7 @@
             // searchButton
             // 
             this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchButton.Location = new System.Drawing.Point(24, 189);
+            this.searchButton.Location = new System.Drawing.Point(24, 205);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(167, 34);
             this.searchButton.TabIndex = 12;
@@ -117,7 +117,7 @@
             // addMember
             // 
             this.addMember.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addMember.Location = new System.Drawing.Point(24, 231);
+            this.addMember.Location = new System.Drawing.Point(24, 247);
             this.addMember.Name = "addMember";
             this.addMember.Size = new System.Drawing.Size(167, 34);
             this.addMember.TabIndex = 8;
@@ -130,7 +130,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(391, 343);
+            this.ClientSize = new System.Drawing.Size(380, 392);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.helpButton);
             this.Controls.Add(this.bookClassButton);

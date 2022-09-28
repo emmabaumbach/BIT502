@@ -47,13 +47,11 @@
             this.clearButton = new System.Windows.Forms.Button();
             this.bookClassButton = new System.Windows.Forms.Button();
             this.helpButton = new System.Windows.Forms.Button();
-            this.nameText = new System.Windows.Forms.TextBox();
+            this.searchTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.memTypeText = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.radioFirstName = new System.Windows.Forms.RadioButton();
@@ -222,17 +220,18 @@
             // searchButton
             // 
             this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchButton.Location = new System.Drawing.Point(419, 222);
+            this.searchButton.Location = new System.Drawing.Point(419, 194);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(108, 34);
             this.searchButton.TabIndex = 3;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // clearButton
             // 
             this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearButton.Location = new System.Drawing.Point(419, 262);
+            this.clearButton.Location = new System.Drawing.Point(419, 234);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(108, 34);
             this.clearButton.TabIndex = 4;
@@ -262,13 +261,13 @@
             this.helpButton.UseVisualStyleBackColor = true;
             this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
             // 
-            // nameText
+            // searchTextBox
             // 
-            this.nameText.Location = new System.Drawing.Point(206, 157);
-            this.nameText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.nameText.Name = "nameText";
-            this.nameText.Size = new System.Drawing.Size(321, 22);
-            this.nameText.TabIndex = 66;
+            this.searchTextBox.Location = new System.Drawing.Point(123, 157);
+            this.searchTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.searchTextBox.Name = "searchTextBox";
+            this.searchTextBox.Size = new System.Drawing.Size(404, 22);
+            this.searchTextBox.TabIndex = 66;
             // 
             // label3
             // 
@@ -309,24 +308,6 @@
             this.label1.Size = new System.Drawing.Size(184, 46);
             this.label1.TabIndex = 67;
             this.label1.Text = "City Gym";
-            // 
-            // memTypeText
-            // 
-            this.memTypeText.Location = new System.Drawing.Point(206, 193);
-            this.memTypeText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.memTypeText.Name = "memTypeText";
-            this.memTypeText.Size = new System.Drawing.Size(321, 22);
-            this.memTypeText.TabIndex = 70;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(44, 193);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(142, 20);
-            this.label5.TabIndex = 69;
-            this.label5.Text = "Membership Type";
             // 
             // label6
             // 
@@ -859,11 +840,9 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.memTypeText);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.nameText);
+            this.Controls.Add(this.searchTextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.helpButton);
@@ -906,13 +885,11 @@
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Button bookClassButton;
         private System.Windows.Forms.Button helpButton;
-        private System.Windows.Forms.TextBox nameText;
+        private System.Windows.Forms.TextBox searchTextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox memTypeText;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton radioFirstName;

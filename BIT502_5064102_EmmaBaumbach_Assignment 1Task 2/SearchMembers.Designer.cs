@@ -29,20 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchMembers));
             System.Windows.Forms.Label memberIDLabel;
             System.Windows.Forms.Label firstNameLabel;
             System.Windows.Forms.Label lastNameLabel;
             System.Windows.Forms.Label addressLabel;
             System.Windows.Forms.Label cellPhoneLabel;
-            System.Windows.Forms.Label discountAmountLabel;
-            System.Windows.Forms.Label extraAmountLabel;
-            System.Windows.Forms.Label totalAmountLabel;
             System.Windows.Forms.Label membershipIDLabel;
-            System.Windows.Forms.Label expiryDateLabel;
-            System.Windows.Forms.Label directDebitLabel;
-            System.Windows.Forms.Label duration_M_Label;
-            System.Windows.Forms.Label payFreqLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchMembers));
+            System.Windows.Forms.Label bookingIDLabel;
+            System.Windows.Forms.Label classIDLabel;
+            System.Windows.Forms.Label slotLabel;
+            System.Windows.Forms.Label memberIDLabel1;
             this.mainMenuButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.addMemberButton = new System.Windows.Forms.Button();
@@ -66,33 +63,19 @@
             this.memberTableAdapter = new BIT502_5064102_EmmaBaumbach_Assignment_1Task_2.CityGymMembershipDataSetTableAdapters.MemberTableAdapter();
             this.tableAdapterManager = new BIT502_5064102_EmmaBaumbach_Assignment_1Task_2.CityGymMembershipDataSetTableAdapters.TableAdapterManager();
             this.memberBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.memberBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.memberDataGridView = new System.Windows.Forms.DataGridView();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.memberIDTextBox = new System.Windows.Forms.TextBox();
-            this.firstNameTextBox = new System.Windows.Forms.TextBox();
-            this.lastNameTextBox = new System.Windows.Forms.TextBox();
-            this.addressTextBox = new System.Windows.Forms.TextBox();
-            this.cellPhoneTextBox = new System.Windows.Forms.TextBox();
-            this.discountAmountTextBox = new System.Windows.Forms.TextBox();
-            this.extraAmountTextBox = new System.Windows.Forms.TextBox();
-            this.totalAmountTextBox = new System.Windows.Forms.TextBox();
-            this.membershipIDTextBox = new System.Windows.Forms.TextBox();
-            this.expiryDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.directDebitTextBox = new System.Windows.Forms.TextBox();
-            this.duration_M_TextBox = new System.Windows.Forms.TextBox();
-            this.payFreqTextBox = new System.Windows.Forms.TextBox();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -106,30 +89,107 @@
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.memberIDTextBox = new System.Windows.Forms.TextBox();
+            this.membershipIDTextBox = new System.Windows.Forms.TextBox();
+            this.firstNameTextBox = new System.Windows.Forms.TextBox();
+            this.cellPhoneTextBox = new System.Windows.Forms.TextBox();
+            this.lastNameTextBox = new System.Windows.Forms.TextBox();
+            this.addressTextBox = new System.Windows.Forms.TextBox();
+            this.bookingBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bookingTableAdapter = new BIT502_5064102_EmmaBaumbach_Assignment_1Task_2.CityGymMembershipDataSetTableAdapters.BookingTableAdapter();
+            this.bookingIDTextBox = new System.Windows.Forms.TextBox();
+            this.classIDTextBox = new System.Windows.Forms.TextBox();
+            this.slotTextBox = new System.Windows.Forms.TextBox();
+            this.memberIDTextBox1 = new System.Windows.Forms.TextBox();
+            this.removeFilterButton = new System.Windows.Forms.Button();
+            this.filterButton = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             memberIDLabel = new System.Windows.Forms.Label();
             firstNameLabel = new System.Windows.Forms.Label();
             lastNameLabel = new System.Windows.Forms.Label();
             addressLabel = new System.Windows.Forms.Label();
             cellPhoneLabel = new System.Windows.Forms.Label();
-            discountAmountLabel = new System.Windows.Forms.Label();
-            extraAmountLabel = new System.Windows.Forms.Label();
-            totalAmountLabel = new System.Windows.Forms.Label();
             membershipIDLabel = new System.Windows.Forms.Label();
-            expiryDateLabel = new System.Windows.Forms.Label();
-            directDebitLabel = new System.Windows.Forms.Label();
-            duration_M_Label = new System.Windows.Forms.Label();
-            payFreqLabel = new System.Windows.Forms.Label();
+            bookingIDLabel = new System.Windows.Forms.Label();
+            classIDLabel = new System.Windows.Forms.Label();
+            slotLabel = new System.Windows.Forms.Label();
+            memberIDLabel1 = new System.Windows.Forms.Label();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cityGymMembershipDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberBindingNavigator)).BeginInit();
             this.memberBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.memberDataGridView)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bookingBindingSource)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // memberIDLabel
+            // 
+            memberIDLabel.AutoSize = true;
+            memberIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            memberIDLabel.Location = new System.Drawing.Point(6, 23);
+            memberIDLabel.Name = "memberIDLabel";
+            memberIDLabel.Size = new System.Drawing.Size(97, 20);
+            memberIDLabel.TabIndex = 76;
+            memberIDLabel.Text = "Member ID:";
+            // 
+            // firstNameLabel
+            // 
+            firstNameLabel.AutoSize = true;
+            firstNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            firstNameLabel.Location = new System.Drawing.Point(6, 51);
+            firstNameLabel.Name = "firstNameLabel";
+            firstNameLabel.Size = new System.Drawing.Size(97, 20);
+            firstNameLabel.TabIndex = 78;
+            firstNameLabel.Text = "First Name:";
+            // 
+            // lastNameLabel
+            // 
+            lastNameLabel.AutoSize = true;
+            lastNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lastNameLabel.Location = new System.Drawing.Point(6, 79);
+            lastNameLabel.Name = "lastNameLabel";
+            lastNameLabel.Size = new System.Drawing.Size(96, 20);
+            lastNameLabel.TabIndex = 80;
+            lastNameLabel.Text = "Last Name:";
+            // 
+            // addressLabel
+            // 
+            addressLabel.AutoSize = true;
+            addressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            addressLabel.Location = new System.Drawing.Point(6, 107);
+            addressLabel.Name = "addressLabel";
+            addressLabel.Size = new System.Drawing.Size(76, 20);
+            addressLabel.TabIndex = 82;
+            addressLabel.Text = "Address:";
+            // 
+            // cellPhoneLabel
+            // 
+            cellPhoneLabel.AutoSize = true;
+            cellPhoneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            cellPhoneLabel.Location = new System.Drawing.Point(6, 135);
+            cellPhoneLabel.Name = "cellPhoneLabel";
+            cellPhoneLabel.Size = new System.Drawing.Size(95, 20);
+            cellPhoneLabel.TabIndex = 84;
+            cellPhoneLabel.Text = "Cell Phone:";
+            // 
+            // membershipIDLabel
+            // 
+            membershipIDLabel.AutoSize = true;
+            membershipIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            membershipIDLabel.Location = new System.Drawing.Point(6, 163);
+            membershipIDLabel.Name = "membershipIDLabel";
+            membershipIDLabel.Size = new System.Drawing.Size(128, 20);
+            membershipIDLabel.TabIndex = 92;
+            membershipIDLabel.Text = "Membership ID:";
             // 
             // mainMenuButton
             // 
             this.mainMenuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainMenuButton.Location = new System.Drawing.Point(463, 820);
+            this.mainMenuButton.Location = new System.Drawing.Point(394, 765);
             this.mainMenuButton.Name = "mainMenuButton";
             this.mainMenuButton.Size = new System.Drawing.Size(167, 34);
             this.mainMenuButton.TabIndex = 0;
@@ -140,7 +200,7 @@
             // exitButton
             // 
             this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitButton.Location = new System.Drawing.Point(985, 840);
+            this.exitButton.Location = new System.Drawing.Point(916, 785);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(108, 37);
             this.exitButton.TabIndex = 1;
@@ -151,7 +211,7 @@
             // addMemberButton
             // 
             this.addMemberButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addMemberButton.Location = new System.Drawing.Point(636, 820);
+            this.addMemberButton.Location = new System.Drawing.Point(567, 765);
             this.addMemberButton.Name = "addMemberButton";
             this.addMemberButton.Size = new System.Drawing.Size(166, 34);
             this.addMemberButton.TabIndex = 2;
@@ -162,7 +222,7 @@
             // searchButton
             // 
             this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchButton.Location = new System.Drawing.Point(448, 197);
+            this.searchButton.Location = new System.Drawing.Point(419, 222);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(108, 34);
             this.searchButton.TabIndex = 3;
@@ -172,7 +232,7 @@
             // clearButton
             // 
             this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearButton.Location = new System.Drawing.Point(562, 197);
+            this.clearButton.Location = new System.Drawing.Point(419, 262);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(108, 34);
             this.clearButton.TabIndex = 4;
@@ -183,7 +243,7 @@
             // bookClassButton
             // 
             this.bookClassButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bookClassButton.Location = new System.Drawing.Point(808, 820);
+            this.bookClassButton.Location = new System.Drawing.Point(739, 765);
             this.bookClassButton.Name = "bookClassButton";
             this.bookClassButton.Size = new System.Drawing.Size(167, 34);
             this.bookClassButton.TabIndex = 5;
@@ -194,7 +254,7 @@
             // helpButton
             // 
             this.helpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.helpButton.Location = new System.Drawing.Point(985, 803);
+            this.helpButton.Location = new System.Drawing.Point(916, 748);
             this.helpButton.Name = "helpButton";
             this.helpButton.Size = new System.Drawing.Size(108, 31);
             this.helpButton.TabIndex = 6;
@@ -204,17 +264,17 @@
             // 
             // nameText
             // 
-            this.nameText.Location = new System.Drawing.Point(206, 124);
+            this.nameText.Location = new System.Drawing.Point(206, 157);
             this.nameText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nameText.Name = "nameText";
-            this.nameText.Size = new System.Drawing.Size(464, 22);
+            this.nameText.Size = new System.Drawing.Size(321, 22);
             this.nameText.TabIndex = 66;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(45, 124);
+            this.label3.Location = new System.Drawing.Point(45, 157);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 20);
             this.label3.TabIndex = 65;
@@ -224,7 +284,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(28, 92);
+            this.label4.Location = new System.Drawing.Point(28, 125);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(168, 24);
             this.label4.TabIndex = 64;
@@ -234,7 +294,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(274, 55);
+            this.label2.Location = new System.Drawing.Point(410, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(197, 29);
             this.label2.TabIndex = 68;
@@ -244,7 +304,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(275, 9);
+            this.label1.Location = new System.Drawing.Point(411, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(184, 46);
             this.label1.TabIndex = 67;
@@ -252,17 +312,17 @@
             // 
             // memTypeText
             // 
-            this.memTypeText.Location = new System.Drawing.Point(206, 160);
+            this.memTypeText.Location = new System.Drawing.Point(206, 193);
             this.memTypeText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.memTypeText.Name = "memTypeText";
-            this.memTypeText.Size = new System.Drawing.Size(464, 22);
+            this.memTypeText.Size = new System.Drawing.Size(321, 22);
             this.memTypeText.TabIndex = 70;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(44, 160);
+            this.label5.Location = new System.Drawing.Point(44, 193);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(142, 20);
             this.label5.TabIndex = 69;
@@ -272,7 +332,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(28, 407);
+            this.label6.Location = new System.Drawing.Point(28, 337);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(131, 24);
             this.label6.TabIndex = 71;
@@ -280,10 +340,18 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(358, 283);
+            this.groupBox2.Controls.Add(bookingIDLabel);
+            this.groupBox2.Controls.Add(this.bookingIDTextBox);
+            this.groupBox2.Controls.Add(this.memberIDTextBox1);
+            this.groupBox2.Controls.Add(classIDLabel);
+            this.groupBox2.Controls.Add(memberIDLabel1);
+            this.groupBox2.Controls.Add(this.classIDTextBox);
+            this.groupBox2.Controls.Add(this.slotTextBox);
+            this.groupBox2.Controls.Add(slotLabel);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(551, 349);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(280, 108);
+            this.groupBox2.Size = new System.Drawing.Size(473, 146);
             this.groupBox2.TabIndex = 73;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Booking Detail";
@@ -292,7 +360,7 @@
             // 
             this.radioFirstName.AutoSize = true;
             this.radioFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioFirstName.Location = new System.Drawing.Point(48, 449);
+            this.radioFirstName.Location = new System.Drawing.Point(28, 38);
             this.radioFirstName.Name = "radioFirstName";
             this.radioFirstName.Size = new System.Drawing.Size(110, 24);
             this.radioFirstName.TabIndex = 74;
@@ -304,7 +372,7 @@
             // 
             this.radioMemType.AutoSize = true;
             this.radioMemType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioMemType.Location = new System.Drawing.Point(49, 476);
+            this.radioMemType.Location = new System.Drawing.Point(173, 38);
             this.radioMemType.Name = "radioMemType";
             this.radioMemType.Size = new System.Drawing.Size(158, 24);
             this.radioMemType.TabIndex = 75;
@@ -362,9 +430,34 @@
             this.memberBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.memberBindingNavigator.Name = "memberBindingNavigator";
             this.memberBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.memberBindingNavigator.Size = new System.Drawing.Size(1113, 27);
+            this.memberBindingNavigator.Size = new System.Drawing.Size(1064, 27);
             this.memberBindingNavigator.TabIndex = 76;
             this.memberBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -398,16 +491,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
@@ -430,26 +516,8 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // memberBindingNavigatorSaveItem
             // 
@@ -463,6 +531,7 @@
             // memberDataGridView
             // 
             this.memberDataGridView.AutoGenerateColumns = false;
+            this.memberDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.memberDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.memberDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -479,242 +548,11 @@
             this.dataGridViewTextBoxColumn12,
             this.dataGridViewTextBoxColumn13});
             this.memberDataGridView.DataSource = this.memberBindingSource;
-            this.memberDataGridView.Location = new System.Drawing.Point(32, 520);
+            this.memberDataGridView.Location = new System.Drawing.Point(32, 510);
             this.memberDataGridView.Name = "memberDataGridView";
             this.memberDataGridView.RowTemplate.Height = 24;
-            this.memberDataGridView.Size = new System.Drawing.Size(1061, 220);
+            this.memberDataGridView.Size = new System.Drawing.Size(992, 220);
             this.memberDataGridView.TabIndex = 76;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(79, 283);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(272, 108);
-            this.groupBox1.TabIndex = 72;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Member Detail";
-            // 
-            // memberIDLabel
-            // 
-            memberIDLabel.AutoSize = true;
-            memberIDLabel.Location = new System.Drawing.Point(714, 118);
-            memberIDLabel.Name = "memberIDLabel";
-            memberIDLabel.Size = new System.Drawing.Size(80, 17);
-            memberIDLabel.TabIndex = 76;
-            memberIDLabel.Text = "Member ID:";
-            // 
-            // memberIDTextBox
-            // 
-            this.memberIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "MemberID", true));
-            this.memberIDTextBox.Location = new System.Drawing.Point(839, 115);
-            this.memberIDTextBox.Name = "memberIDTextBox";
-            this.memberIDTextBox.Size = new System.Drawing.Size(200, 22);
-            this.memberIDTextBox.TabIndex = 77;
-            // 
-            // firstNameLabel
-            // 
-            firstNameLabel.AutoSize = true;
-            firstNameLabel.Location = new System.Drawing.Point(714, 146);
-            firstNameLabel.Name = "firstNameLabel";
-            firstNameLabel.Size = new System.Drawing.Size(80, 17);
-            firstNameLabel.TabIndex = 78;
-            firstNameLabel.Text = "First Name:";
-            // 
-            // firstNameTextBox
-            // 
-            this.firstNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "FirstName", true));
-            this.firstNameTextBox.Location = new System.Drawing.Point(839, 143);
-            this.firstNameTextBox.Name = "firstNameTextBox";
-            this.firstNameTextBox.Size = new System.Drawing.Size(200, 22);
-            this.firstNameTextBox.TabIndex = 79;
-            // 
-            // lastNameLabel
-            // 
-            lastNameLabel.AutoSize = true;
-            lastNameLabel.Location = new System.Drawing.Point(714, 174);
-            lastNameLabel.Name = "lastNameLabel";
-            lastNameLabel.Size = new System.Drawing.Size(80, 17);
-            lastNameLabel.TabIndex = 80;
-            lastNameLabel.Text = "Last Name:";
-            // 
-            // lastNameTextBox
-            // 
-            this.lastNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "LastName", true));
-            this.lastNameTextBox.Location = new System.Drawing.Point(839, 171);
-            this.lastNameTextBox.Name = "lastNameTextBox";
-            this.lastNameTextBox.Size = new System.Drawing.Size(200, 22);
-            this.lastNameTextBox.TabIndex = 81;
-            // 
-            // addressLabel
-            // 
-            addressLabel.AutoSize = true;
-            addressLabel.Location = new System.Drawing.Point(714, 202);
-            addressLabel.Name = "addressLabel";
-            addressLabel.Size = new System.Drawing.Size(64, 17);
-            addressLabel.TabIndex = 82;
-            addressLabel.Text = "Address:";
-            // 
-            // addressTextBox
-            // 
-            this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "Address", true));
-            this.addressTextBox.Location = new System.Drawing.Point(839, 199);
-            this.addressTextBox.Name = "addressTextBox";
-            this.addressTextBox.Size = new System.Drawing.Size(200, 22);
-            this.addressTextBox.TabIndex = 83;
-            // 
-            // cellPhoneLabel
-            // 
-            cellPhoneLabel.AutoSize = true;
-            cellPhoneLabel.Location = new System.Drawing.Point(714, 230);
-            cellPhoneLabel.Name = "cellPhoneLabel";
-            cellPhoneLabel.Size = new System.Drawing.Size(80, 17);
-            cellPhoneLabel.TabIndex = 84;
-            cellPhoneLabel.Text = "Cell Phone:";
-            // 
-            // cellPhoneTextBox
-            // 
-            this.cellPhoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "CellPhone", true));
-            this.cellPhoneTextBox.Location = new System.Drawing.Point(839, 227);
-            this.cellPhoneTextBox.Name = "cellPhoneTextBox";
-            this.cellPhoneTextBox.Size = new System.Drawing.Size(200, 22);
-            this.cellPhoneTextBox.TabIndex = 85;
-            // 
-            // discountAmountLabel
-            // 
-            discountAmountLabel.AutoSize = true;
-            discountAmountLabel.Location = new System.Drawing.Point(714, 258);
-            discountAmountLabel.Name = "discountAmountLabel";
-            discountAmountLabel.Size = new System.Drawing.Size(119, 17);
-            discountAmountLabel.TabIndex = 86;
-            discountAmountLabel.Text = "Discount Amount:";
-            // 
-            // discountAmountTextBox
-            // 
-            this.discountAmountTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "DiscountAmount", true));
-            this.discountAmountTextBox.Location = new System.Drawing.Point(839, 255);
-            this.discountAmountTextBox.Name = "discountAmountTextBox";
-            this.discountAmountTextBox.Size = new System.Drawing.Size(200, 22);
-            this.discountAmountTextBox.TabIndex = 87;
-            // 
-            // extraAmountLabel
-            // 
-            extraAmountLabel.AutoSize = true;
-            extraAmountLabel.Location = new System.Drawing.Point(714, 286);
-            extraAmountLabel.Name = "extraAmountLabel";
-            extraAmountLabel.Size = new System.Drawing.Size(96, 17);
-            extraAmountLabel.TabIndex = 88;
-            extraAmountLabel.Text = "Extra Amount:";
-            // 
-            // extraAmountTextBox
-            // 
-            this.extraAmountTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "ExtraAmount", true));
-            this.extraAmountTextBox.Location = new System.Drawing.Point(839, 283);
-            this.extraAmountTextBox.Name = "extraAmountTextBox";
-            this.extraAmountTextBox.Size = new System.Drawing.Size(200, 22);
-            this.extraAmountTextBox.TabIndex = 89;
-            // 
-            // totalAmountLabel
-            // 
-            totalAmountLabel.AutoSize = true;
-            totalAmountLabel.Location = new System.Drawing.Point(714, 314);
-            totalAmountLabel.Name = "totalAmountLabel";
-            totalAmountLabel.Size = new System.Drawing.Size(96, 17);
-            totalAmountLabel.TabIndex = 90;
-            totalAmountLabel.Text = "Total Amount:";
-            // 
-            // totalAmountTextBox
-            // 
-            this.totalAmountTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "TotalAmount", true));
-            this.totalAmountTextBox.Location = new System.Drawing.Point(839, 311);
-            this.totalAmountTextBox.Name = "totalAmountTextBox";
-            this.totalAmountTextBox.Size = new System.Drawing.Size(200, 22);
-            this.totalAmountTextBox.TabIndex = 91;
-            // 
-            // membershipIDLabel
-            // 
-            membershipIDLabel.AutoSize = true;
-            membershipIDLabel.Location = new System.Drawing.Point(714, 342);
-            membershipIDLabel.Name = "membershipIDLabel";
-            membershipIDLabel.Size = new System.Drawing.Size(106, 17);
-            membershipIDLabel.TabIndex = 92;
-            membershipIDLabel.Text = "Membership ID:";
-            // 
-            // membershipIDTextBox
-            // 
-            this.membershipIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "MembershipID", true));
-            this.membershipIDTextBox.Location = new System.Drawing.Point(839, 339);
-            this.membershipIDTextBox.Name = "membershipIDTextBox";
-            this.membershipIDTextBox.Size = new System.Drawing.Size(200, 22);
-            this.membershipIDTextBox.TabIndex = 93;
-            // 
-            // expiryDateLabel
-            // 
-            expiryDateLabel.AutoSize = true;
-            expiryDateLabel.Location = new System.Drawing.Point(714, 371);
-            expiryDateLabel.Name = "expiryDateLabel";
-            expiryDateLabel.Size = new System.Drawing.Size(84, 17);
-            expiryDateLabel.TabIndex = 94;
-            expiryDateLabel.Text = "Expiry Date:";
-            // 
-            // expiryDateDateTimePicker
-            // 
-            this.expiryDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.memberBindingSource, "ExpiryDate", true));
-            this.expiryDateDateTimePicker.Location = new System.Drawing.Point(839, 367);
-            this.expiryDateDateTimePicker.Name = "expiryDateDateTimePicker";
-            this.expiryDateDateTimePicker.Size = new System.Drawing.Size(200, 22);
-            this.expiryDateDateTimePicker.TabIndex = 95;
-            // 
-            // directDebitLabel
-            // 
-            directDebitLabel.AutoSize = true;
-            directDebitLabel.Location = new System.Drawing.Point(714, 398);
-            directDebitLabel.Name = "directDebitLabel";
-            directDebitLabel.Size = new System.Drawing.Size(86, 17);
-            directDebitLabel.TabIndex = 96;
-            directDebitLabel.Text = "Direct Debit:";
-            // 
-            // directDebitTextBox
-            // 
-            this.directDebitTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "DirectDebit", true));
-            this.directDebitTextBox.Location = new System.Drawing.Point(839, 395);
-            this.directDebitTextBox.Name = "directDebitTextBox";
-            this.directDebitTextBox.Size = new System.Drawing.Size(200, 22);
-            this.directDebitTextBox.TabIndex = 97;
-            // 
-            // duration_M_Label
-            // 
-            duration_M_Label.AutoSize = true;
-            duration_M_Label.Location = new System.Drawing.Point(714, 426);
-            duration_M_Label.Name = "duration_M_Label";
-            duration_M_Label.Size = new System.Drawing.Size(87, 17);
-            duration_M_Label.TabIndex = 98;
-            duration_M_Label.Text = "Duration(M):";
-            // 
-            // duration_M_TextBox
-            // 
-            this.duration_M_TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "Duration(M)", true));
-            this.duration_M_TextBox.Location = new System.Drawing.Point(839, 423);
-            this.duration_M_TextBox.Name = "duration_M_TextBox";
-            this.duration_M_TextBox.Size = new System.Drawing.Size(200, 22);
-            this.duration_M_TextBox.TabIndex = 99;
-            // 
-            // payFreqLabel
-            // 
-            payFreqLabel.AutoSize = true;
-            payFreqLabel.Location = new System.Drawing.Point(714, 454);
-            payFreqLabel.Name = "payFreqLabel";
-            payFreqLabel.Size = new System.Drawing.Size(69, 17);
-            payFreqLabel.TabIndex = 100;
-            payFreqLabel.Text = "Pay Freq:";
-            // 
-            // payFreqTextBox
-            // 
-            this.payFreqTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "PayFreq", true));
-            this.payFreqTextBox.Location = new System.Drawing.Point(839, 451);
-            this.payFreqTextBox.Name = "payFreqTextBox";
-            this.payFreqTextBox.Size = new System.Drawing.Size(200, 22);
-            this.payFreqTextBox.TabIndex = 101;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -723,116 +561,301 @@
             this.dataGridViewTextBoxColumn1.HeaderText = "Member ID";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 105;
+            this.dataGridViewTextBoxColumn1.Width = 97;
             // 
             // dataGridViewTextBoxColumn2
             // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn2.DataPropertyName = "FirstName";
             this.dataGridViewTextBoxColumn2.HeaderText = "First Name";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 97;
             // 
             // dataGridViewTextBoxColumn3
             // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn3.DataPropertyName = "LastName";
             this.dataGridViewTextBoxColumn3.HeaderText = "Last Name";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 97;
             // 
             // dataGridViewTextBoxColumn4
             // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Address";
             this.dataGridViewTextBoxColumn4.HeaderText = "Address";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 89;
             // 
             // dataGridViewTextBoxColumn5
             // 
+            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn5.DataPropertyName = "CellPhone";
             this.dataGridViewTextBoxColumn5.HeaderText = "Cell Phone";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 97;
             // 
             // dataGridViewTextBoxColumn6
             // 
+            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn6.DataPropertyName = "DiscountAmount";
             this.dataGridViewTextBoxColumn6.HeaderText = "Discount Amount";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 132;
             // 
             // dataGridViewTextBoxColumn7
             // 
+            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn7.DataPropertyName = "ExtraAmount";
             this.dataGridViewTextBoxColumn7.HeaderText = "Extra Amount";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.Width = 111;
             // 
             // dataGridViewTextBoxColumn8
             // 
+            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn8.DataPropertyName = "TotalAmount";
             this.dataGridViewTextBoxColumn8.HeaderText = "Total Amount";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Width = 111;
             // 
             // dataGridViewTextBoxColumn9
             // 
+            this.dataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn9.DataPropertyName = "MembershipID";
             this.dataGridViewTextBoxColumn9.HeaderText = "Membership ID";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.Width = 120;
             // 
             // dataGridViewTextBoxColumn10
             // 
+            this.dataGridViewTextBoxColumn10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn10.DataPropertyName = "ExpiryDate";
             this.dataGridViewTextBoxColumn10.HeaderText = "Expiry Date";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             // 
             // dataGridViewTextBoxColumn11
             // 
+            this.dataGridViewTextBoxColumn11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn11.DataPropertyName = "DirectDebit";
             this.dataGridViewTextBoxColumn11.HeaderText = "Direct Debit";
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.Width = 102;
             // 
             // dataGridViewTextBoxColumn12
             // 
+            this.dataGridViewTextBoxColumn12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn12.DataPropertyName = "Duration(M)";
             this.dataGridViewTextBoxColumn12.HeaderText = "Duration (M)";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.Width = 107;
             // 
             // dataGridViewTextBoxColumn13
             // 
+            this.dataGridViewTextBoxColumn13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn13.DataPropertyName = "PayFreq";
             this.dataGridViewTextBoxColumn13.HeaderText = "Pay Freq";
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.Width = 87;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(memberIDLabel);
+            this.groupBox1.Controls.Add(this.memberIDTextBox);
+            this.groupBox1.Controls.Add(this.membershipIDTextBox);
+            this.groupBox1.Controls.Add(firstNameLabel);
+            this.groupBox1.Controls.Add(membershipIDLabel);
+            this.groupBox1.Controls.Add(this.firstNameTextBox);
+            this.groupBox1.Controls.Add(this.cellPhoneTextBox);
+            this.groupBox1.Controls.Add(lastNameLabel);
+            this.groupBox1.Controls.Add(cellPhoneLabel);
+            this.groupBox1.Controls.Add(this.lastNameTextBox);
+            this.groupBox1.Controls.Add(this.addressTextBox);
+            this.groupBox1.Controls.Add(addressLabel);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(551, 143);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(473, 200);
+            this.groupBox1.TabIndex = 72;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Member Detail";
+            // 
+            // memberIDTextBox
+            // 
+            this.memberIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "MemberID", true));
+            this.memberIDTextBox.Location = new System.Drawing.Point(147, 20);
+            this.memberIDTextBox.Name = "memberIDTextBox";
+            this.memberIDTextBox.Size = new System.Drawing.Size(307, 27);
+            this.memberIDTextBox.TabIndex = 77;
+            // 
+            // membershipIDTextBox
+            // 
+            this.membershipIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "MembershipID", true));
+            this.membershipIDTextBox.Location = new System.Drawing.Point(147, 160);
+            this.membershipIDTextBox.Name = "membershipIDTextBox";
+            this.membershipIDTextBox.Size = new System.Drawing.Size(307, 27);
+            this.membershipIDTextBox.TabIndex = 93;
+            // 
+            // firstNameTextBox
+            // 
+            this.firstNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "FirstName", true));
+            this.firstNameTextBox.Location = new System.Drawing.Point(147, 48);
+            this.firstNameTextBox.Name = "firstNameTextBox";
+            this.firstNameTextBox.Size = new System.Drawing.Size(307, 27);
+            this.firstNameTextBox.TabIndex = 79;
+            // 
+            // cellPhoneTextBox
+            // 
+            this.cellPhoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "CellPhone", true));
+            this.cellPhoneTextBox.Location = new System.Drawing.Point(147, 132);
+            this.cellPhoneTextBox.Name = "cellPhoneTextBox";
+            this.cellPhoneTextBox.Size = new System.Drawing.Size(307, 27);
+            this.cellPhoneTextBox.TabIndex = 85;
+            // 
+            // lastNameTextBox
+            // 
+            this.lastNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "LastName", true));
+            this.lastNameTextBox.Location = new System.Drawing.Point(147, 76);
+            this.lastNameTextBox.Name = "lastNameTextBox";
+            this.lastNameTextBox.Size = new System.Drawing.Size(307, 27);
+            this.lastNameTextBox.TabIndex = 81;
+            // 
+            // addressTextBox
+            // 
+            this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "Address", true));
+            this.addressTextBox.Location = new System.Drawing.Point(147, 104);
+            this.addressTextBox.Name = "addressTextBox";
+            this.addressTextBox.Size = new System.Drawing.Size(307, 27);
+            this.addressTextBox.TabIndex = 83;
+            // 
+            // bookingBindingSource
+            // 
+            this.bookingBindingSource.DataMember = "FK_Booking_Member";
+            this.bookingBindingSource.DataSource = this.memberBindingSource;
+            // 
+            // bookingTableAdapter
+            // 
+            this.bookingTableAdapter.ClearBeforeFill = true;
+            // 
+            // bookingIDLabel
+            // 
+            bookingIDLabel.AutoSize = true;
+            bookingIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            bookingIDLabel.Location = new System.Drawing.Point(6, 23);
+            bookingIDLabel.Name = "bookingIDLabel";
+            bookingIDLabel.Size = new System.Drawing.Size(96, 20);
+            bookingIDLabel.TabIndex = 76;
+            bookingIDLabel.Text = "Booking ID:";
+            // 
+            // bookingIDTextBox
+            // 
+            this.bookingIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookingBindingSource, "BookingID", true));
+            this.bookingIDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bookingIDTextBox.Location = new System.Drawing.Point(147, 20);
+            this.bookingIDTextBox.Name = "bookingIDTextBox";
+            this.bookingIDTextBox.Size = new System.Drawing.Size(307, 27);
+            this.bookingIDTextBox.TabIndex = 77;
+            // 
+            // classIDLabel
+            // 
+            classIDLabel.AutoSize = true;
+            classIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            classIDLabel.Location = new System.Drawing.Point(6, 51);
+            classIDLabel.Name = "classIDLabel";
+            classIDLabel.Size = new System.Drawing.Size(79, 20);
+            classIDLabel.TabIndex = 78;
+            classIDLabel.Text = "Class ID:";
+            // 
+            // classIDTextBox
+            // 
+            this.classIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookingBindingSource, "ClassID", true));
+            this.classIDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.classIDTextBox.Location = new System.Drawing.Point(147, 48);
+            this.classIDTextBox.Name = "classIDTextBox";
+            this.classIDTextBox.Size = new System.Drawing.Size(307, 27);
+            this.classIDTextBox.TabIndex = 79;
+            // 
+            // slotLabel
+            // 
+            slotLabel.AutoSize = true;
+            slotLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            slotLabel.Location = new System.Drawing.Point(6, 79);
+            slotLabel.Name = "slotLabel";
+            slotLabel.Size = new System.Drawing.Size(85, 20);
+            slotLabel.TabIndex = 80;
+            slotLabel.Text = "Time Slot:";
+            // 
+            // slotTextBox
+            // 
+            this.slotTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookingBindingSource, "Slot", true));
+            this.slotTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.slotTextBox.Location = new System.Drawing.Point(147, 76);
+            this.slotTextBox.Name = "slotTextBox";
+            this.slotTextBox.Size = new System.Drawing.Size(307, 27);
+            this.slotTextBox.TabIndex = 81;
+            // 
+            // memberIDLabel1
+            // 
+            memberIDLabel1.AutoSize = true;
+            memberIDLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            memberIDLabel1.Location = new System.Drawing.Point(6, 108);
+            memberIDLabel1.Name = "memberIDLabel1";
+            memberIDLabel1.Size = new System.Drawing.Size(97, 20);
+            memberIDLabel1.TabIndex = 82;
+            memberIDLabel1.Text = "Member ID:";
+            // 
+            // memberIDTextBox1
+            // 
+            this.memberIDTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookingBindingSource, "MemberID", true));
+            this.memberIDTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.memberIDTextBox1.Location = new System.Drawing.Point(147, 105);
+            this.memberIDTextBox1.Name = "memberIDTextBox1";
+            this.memberIDTextBox1.Size = new System.Drawing.Size(307, 27);
+            this.memberIDTextBox1.TabIndex = 83;
+            // 
+            // removeFilterButton
+            // 
+            this.removeFilterButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeFilterButton.Location = new System.Drawing.Point(403, 419);
+            this.removeFilterButton.Name = "removeFilterButton";
+            this.removeFilterButton.Size = new System.Drawing.Size(124, 34);
+            this.removeFilterButton.TabIndex = 77;
+            this.removeFilterButton.Text = "Remove Filter";
+            this.removeFilterButton.UseVisualStyleBackColor = true;
+            // 
+            // filterButton
+            // 
+            this.filterButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.filterButton.Location = new System.Drawing.Point(403, 383);
+            this.filterButton.Name = "filterButton";
+            this.filterButton.Size = new System.Drawing.Size(124, 34);
+            this.filterButton.TabIndex = 78;
+            this.filterButton.Text = "Filter";
+            this.filterButton.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.radioFirstName);
+            this.groupBox3.Controls.Add(this.radioMemType);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(32, 372);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(365, 87);
+            this.groupBox3.TabIndex = 79;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Select Filter Method";
             // 
             // SearchMembers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(1113, 897);
-            this.Controls.Add(memberIDLabel);
-            this.Controls.Add(this.memberIDTextBox);
-            this.Controls.Add(firstNameLabel);
-            this.Controls.Add(this.firstNameTextBox);
-            this.Controls.Add(lastNameLabel);
-            this.Controls.Add(this.lastNameTextBox);
-            this.Controls.Add(addressLabel);
-            this.Controls.Add(this.addressTextBox);
-            this.Controls.Add(cellPhoneLabel);
-            this.Controls.Add(this.cellPhoneTextBox);
-            this.Controls.Add(discountAmountLabel);
-            this.Controls.Add(this.discountAmountTextBox);
-            this.Controls.Add(extraAmountLabel);
-            this.Controls.Add(this.extraAmountTextBox);
-            this.Controls.Add(totalAmountLabel);
-            this.Controls.Add(this.totalAmountTextBox);
-            this.Controls.Add(membershipIDLabel);
-            this.Controls.Add(this.membershipIDTextBox);
-            this.Controls.Add(expiryDateLabel);
-            this.Controls.Add(this.expiryDateDateTimePicker);
-            this.Controls.Add(directDebitLabel);
-            this.Controls.Add(this.directDebitTextBox);
-            this.Controls.Add(duration_M_Label);
-            this.Controls.Add(this.duration_M_TextBox);
-            this.Controls.Add(payFreqLabel);
-            this.Controls.Add(this.payFreqTextBox);
+            this.ClientSize = new System.Drawing.Size(1064, 847);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.filterButton);
+            this.Controls.Add(this.removeFilterButton);
             this.Controls.Add(this.memberDataGridView);
             this.Controls.Add(this.memberBindingNavigator);
-            this.Controls.Add(this.radioMemType);
-            this.Controls.Add(this.radioFirstName);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label6);
@@ -856,12 +879,19 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search Members";
             this.Load += new System.EventHandler(this.SearchMembers_Load);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cityGymMembershipDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberBindingNavigator)).EndInit();
             this.memberBindingNavigator.ResumeLayout(false);
             this.memberBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.memberDataGridView)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bookingBindingSource)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -911,14 +941,7 @@
         private System.Windows.Forms.TextBox lastNameTextBox;
         private System.Windows.Forms.TextBox addressTextBox;
         private System.Windows.Forms.TextBox cellPhoneTextBox;
-        private System.Windows.Forms.TextBox discountAmountTextBox;
-        private System.Windows.Forms.TextBox extraAmountTextBox;
-        private System.Windows.Forms.TextBox totalAmountTextBox;
         private System.Windows.Forms.TextBox membershipIDTextBox;
-        private System.Windows.Forms.DateTimePicker expiryDateDateTimePicker;
-        private System.Windows.Forms.TextBox directDebitTextBox;
-        private System.Windows.Forms.TextBox duration_M_TextBox;
-        private System.Windows.Forms.TextBox payFreqTextBox;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -932,5 +955,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.BindingSource bookingBindingSource;
+        private CityGymMembershipDataSetTableAdapters.BookingTableAdapter bookingTableAdapter;
+        private System.Windows.Forms.TextBox bookingIDTextBox;
+        private System.Windows.Forms.TextBox memberIDTextBox1;
+        private System.Windows.Forms.TextBox classIDTextBox;
+        private System.Windows.Forms.TextBox slotTextBox;
+        private System.Windows.Forms.Button removeFilterButton;
+        private System.Windows.Forms.Button filterButton;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

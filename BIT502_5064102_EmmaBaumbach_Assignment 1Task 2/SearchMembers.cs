@@ -66,6 +66,8 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 
         private void SearchMembers_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'cityGymMembershipDataSet.Booking' table. You can move, or remove it, as needed.
+            this.bookingTableAdapter.Fill(this.cityGymMembershipDataSet.Booking);
             // TODO: This line of code loads data into the 'cityGymMembershipDataSet.Member' table. You can move, or remove it, as needed.
             this.memberTableAdapter.Fill(this.cityGymMembershipDataSet.Member);
 

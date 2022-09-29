@@ -906,7 +906,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton radioBasic;
-        private CityGymMembershipDataSet cityGymMembershipDataSet;
         private System.Windows.Forms.BindingSource memberBindingSource;
         private CityGymMembershipDataSetTableAdapters.MemberTableAdapter memberTableAdapter;
         private CityGymMembershipDataSetTableAdapters.TableAdapterManager tableAdapterManager;
@@ -955,5 +954,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.RadioButton radioPremium;
         private System.Windows.Forms.RadioButton radioRegular;
+        public CityGymMembershipDataSet cityGymMembershipDataSet;
     }
 }

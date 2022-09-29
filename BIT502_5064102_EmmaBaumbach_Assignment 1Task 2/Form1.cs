@@ -225,10 +225,35 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 
             wr.Close();
 
-            /*EnrolmentsDataSet.StudentCourseRow newStudentCourseRow = enrolmentsDataSet.StudentCourse.NewStudentCourseRow();
 
-            CityGymMembershipDataSet.MemberRow newMemberRow = citygym.DataSet.Member.NewMemberRow();
-            */
+            CityGymMembershipDataSet.MemberRow newMemberRow = cityGymMembershipDataSet.Member.NewMemberRow();
+
+            newMemberRow.MemberID = 6;
+            newMemberRow.FirstName = firstNameText.Text;
+            newMemberRow.LastName = lastNameText.Text;
+            newMemberRow.Address = addressText.Text;
+            newMemberRow.CellPhone = cellPhoneText.Text;
+
+            newMemberRow.DiscountAmount = 0.2M;
+            newMemberRow.ExtraAmount = 21.00M;
+            newMemberRow.TotalAmount = 54.00M;
+            newMemberRow.MembershipID = 3;
+            newMemberRow.ExpiryDate = DateTime.Today.AddMonths(24);
+            newMemberRow.DirectDebit = "Y";
+            newMemberRow._Duration_M_ = 24;
+            newMemberRow.PayFreq = "M";
+
+            // Insert into Dataset
+            cityGymMembershipDataSet.Member.Rows.Add(newMemberRow);
+            // Commit to DB using the table adapter manager
+            this.Validate();
+            this.tableAdapterManager.UpdateAll(cityGymMembershipDataSet);
+            //Refresh Student Course Details to update the DataGridView for the user.
+            this.memberTableAdapter.Fill(this.cityGymMembershipDataSet.Member);
+
+
+
+
         }
 
         public AddMember()
@@ -313,6 +338,8 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'cityGymMembershipDataSet.Member' table. You can move, or remove it, as needed.
+            this.memberTableAdapter.Fill(this.cityGymMembershipDataSet.Member);
 
         }
 
@@ -557,6 +584,14 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 
         private void searchButton_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void memberBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.memberBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.cityGymMembershipDataSet);
 
         }
     }

@@ -18,5 +18,6 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainMenu());
         }
+
     }
 }

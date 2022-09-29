@@ -224,6 +224,11 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
             wr.WriteLine("Payment Frequency (Monthly): " + radioPFMonthly.Checked);
 
             wr.Close();
+
+            /*EnrolmentsDataSet.StudentCourseRow newStudentCourseRow = enrolmentsDataSet.StudentCourse.NewStudentCourseRow();
+
+            CityGymMembershipDataSet.MemberRow newMemberRow = citygym.DataSet.Member.NewMemberRow();
+            */
         }
 
         public AddMember()

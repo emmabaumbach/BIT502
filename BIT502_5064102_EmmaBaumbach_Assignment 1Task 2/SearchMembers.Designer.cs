@@ -56,15 +56,10 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.bookingIDTextBox = new System.Windows.Forms.TextBox();
             this.bookingBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.memberBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cityGymMembershipDataSet = new BIT502_5064102_EmmaBaumbach_Assignment_1Task_2.CityGymMembershipDataSet();
             this.memberIDTextBox1 = new System.Windows.Forms.TextBox();
             this.classIDTextBox = new System.Windows.Forms.TextBox();
             this.TimeSlotTextBox = new System.Windows.Forms.TextBox();
-            this.radioFirstName = new System.Windows.Forms.RadioButton();
-            this.radioMemType = new System.Windows.Forms.RadioButton();
-            this.memberTableAdapter = new BIT502_5064102_EmmaBaumbach_Assignment_1Task_2.CityGymMembershipDataSetTableAdapters.MemberTableAdapter();
-            this.tableAdapterManager = new BIT502_5064102_EmmaBaumbach_Assignment_1Task_2.CityGymMembershipDataSetTableAdapters.TableAdapterManager();
+            this.radioBasic = new System.Windows.Forms.RadioButton();
             this.memberBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -79,6 +74,18 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.memberBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.memberDataGridView = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.memberIDTextBox = new System.Windows.Forms.TextBox();
+            this.membershipIDTextBox = new System.Windows.Forms.TextBox();
+            this.firstNameTextBox = new System.Windows.Forms.TextBox();
+            this.cellPhoneTextBox = new System.Windows.Forms.TextBox();
+            this.lastNameTextBox = new System.Windows.Forms.TextBox();
+            this.addressTextBox = new System.Windows.Forms.TextBox();
+            this.removeFilterButton = new System.Windows.Forms.Button();
+            this.filterButton = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.radioRegular = new System.Windows.Forms.RadioButton();
+            this.radioPremium = new System.Windows.Forms.RadioButton();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -92,17 +99,11 @@
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.memberIDTextBox = new System.Windows.Forms.TextBox();
-            this.membershipIDTextBox = new System.Windows.Forms.TextBox();
-            this.firstNameTextBox = new System.Windows.Forms.TextBox();
-            this.cellPhoneTextBox = new System.Windows.Forms.TextBox();
-            this.lastNameTextBox = new System.Windows.Forms.TextBox();
-            this.addressTextBox = new System.Windows.Forms.TextBox();
+            this.memberBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cityGymMembershipDataSet = new BIT502_5064102_EmmaBaumbach_Assignment_1Task_2.CityGymMembershipDataSet();
+            this.memberTableAdapter = new BIT502_5064102_EmmaBaumbach_Assignment_1Task_2.CityGymMembershipDataSetTableAdapters.MemberTableAdapter();
+            this.tableAdapterManager = new BIT502_5064102_EmmaBaumbach_Assignment_1Task_2.CityGymMembershipDataSetTableAdapters.TableAdapterManager();
             this.bookingTableAdapter = new BIT502_5064102_EmmaBaumbach_Assignment_1Task_2.CityGymMembershipDataSetTableAdapters.BookingTableAdapter();
-            this.removeFilterButton = new System.Windows.Forms.Button();
-            this.filterButton = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             memberIDLabel = new System.Windows.Forms.Label();
             firstNameLabel = new System.Windows.Forms.Label();
             lastNameLabel = new System.Windows.Forms.Label();
@@ -115,13 +116,13 @@
             memberIDLabel1 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bookingBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memberBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cityGymMembershipDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberBindingNavigator)).BeginInit();
             this.memberBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.memberDataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.memberBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cityGymMembershipDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // memberIDLabel
@@ -355,9 +356,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(28, 337);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(131, 24);
+            this.label6.Size = new System.Drawing.Size(207, 24);
             this.label6.TabIndex = 71;
-            this.label6.Text = "Filter Results";
+            this.label6.Text = "Filter by Membership";
             // 
             // groupBox2
             // 
@@ -391,16 +392,6 @@
             this.bookingBindingSource.DataMember = "FK_Booking_Member";
             this.bookingBindingSource.DataSource = this.memberBindingSource;
             // 
-            // memberBindingSource
-            // 
-            this.memberBindingSource.DataMember = "Member";
-            this.memberBindingSource.DataSource = this.cityGymMembershipDataSet;
-            // 
-            // cityGymMembershipDataSet
-            // 
-            this.cityGymMembershipDataSet.DataSetName = "CityGymMembershipDataSet";
-            this.cityGymMembershipDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // memberIDTextBox1
             // 
             this.memberIDTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookingBindingSource, "MemberID", true));
@@ -428,42 +419,17 @@
             this.TimeSlotTextBox.Size = new System.Drawing.Size(307, 27);
             this.TimeSlotTextBox.TabIndex = 81;
             // 
-            // radioFirstName
+            // radioBasic
             // 
-            this.radioFirstName.AutoSize = true;
-            this.radioFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioFirstName.Location = new System.Drawing.Point(28, 38);
-            this.radioFirstName.Name = "radioFirstName";
-            this.radioFirstName.Size = new System.Drawing.Size(110, 24);
-            this.radioFirstName.TabIndex = 74;
-            this.radioFirstName.TabStop = true;
-            this.radioFirstName.Text = "First name";
-            this.radioFirstName.UseVisualStyleBackColor = true;
-            // 
-            // radioMemType
-            // 
-            this.radioMemType.AutoSize = true;
-            this.radioMemType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioMemType.Location = new System.Drawing.Point(173, 38);
-            this.radioMemType.Name = "radioMemType";
-            this.radioMemType.Size = new System.Drawing.Size(158, 24);
-            this.radioMemType.TabIndex = 75;
-            this.radioMemType.TabStop = true;
-            this.radioMemType.Text = "Membership type";
-            this.radioMemType.UseVisualStyleBackColor = true;
-            // 
-            // memberTableAdapter
-            // 
-            this.memberTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.BookingTableAdapter = null;
-            this.tableAdapterManager.ClassTableAdapter = null;
-            this.tableAdapterManager.MembershipTableAdapter = null;
-            this.tableAdapterManager.MemberTableAdapter = this.memberTableAdapter;
-            this.tableAdapterManager.UpdateOrder = BIT502_5064102_EmmaBaumbach_Assignment_1Task_2.CityGymMembershipDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.radioBasic.AutoSize = true;
+            this.radioBasic.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBasic.Location = new System.Drawing.Point(28, 38);
+            this.radioBasic.Name = "radioBasic";
+            this.radioBasic.Size = new System.Drawing.Size(73, 24);
+            this.radioBasic.TabIndex = 74;
+            this.radioBasic.TabStop = true;
+            this.radioBasic.Text = "Basic";
+            this.radioBasic.UseVisualStyleBackColor = true;
             // 
             // memberBindingNavigator
             // 
@@ -616,6 +582,132 @@
             this.memberDataGridView.Size = new System.Drawing.Size(992, 220);
             this.memberDataGridView.TabIndex = 76;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(memberIDLabel);
+            this.groupBox1.Controls.Add(this.memberIDTextBox);
+            this.groupBox1.Controls.Add(this.membershipIDTextBox);
+            this.groupBox1.Controls.Add(firstNameLabel);
+            this.groupBox1.Controls.Add(membershipIDLabel);
+            this.groupBox1.Controls.Add(this.firstNameTextBox);
+            this.groupBox1.Controls.Add(this.cellPhoneTextBox);
+            this.groupBox1.Controls.Add(lastNameLabel);
+            this.groupBox1.Controls.Add(cellPhoneLabel);
+            this.groupBox1.Controls.Add(this.lastNameTextBox);
+            this.groupBox1.Controls.Add(this.addressTextBox);
+            this.groupBox1.Controls.Add(addressLabel);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(551, 143);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(473, 200);
+            this.groupBox1.TabIndex = 72;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Member Detail";
+            // 
+            // memberIDTextBox
+            // 
+            this.memberIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "MemberID", true));
+            this.memberIDTextBox.Location = new System.Drawing.Point(147, 20);
+            this.memberIDTextBox.Name = "memberIDTextBox";
+            this.memberIDTextBox.Size = new System.Drawing.Size(307, 27);
+            this.memberIDTextBox.TabIndex = 77;
+            // 
+            // membershipIDTextBox
+            // 
+            this.membershipIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "MembershipID", true));
+            this.membershipIDTextBox.Location = new System.Drawing.Point(147, 160);
+            this.membershipIDTextBox.Name = "membershipIDTextBox";
+            this.membershipIDTextBox.Size = new System.Drawing.Size(307, 27);
+            this.membershipIDTextBox.TabIndex = 93;
+            // 
+            // firstNameTextBox
+            // 
+            this.firstNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "FirstName", true));
+            this.firstNameTextBox.Location = new System.Drawing.Point(147, 48);
+            this.firstNameTextBox.Name = "firstNameTextBox";
+            this.firstNameTextBox.Size = new System.Drawing.Size(307, 27);
+            this.firstNameTextBox.TabIndex = 79;
+            // 
+            // cellPhoneTextBox
+            // 
+            this.cellPhoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "CellPhone", true));
+            this.cellPhoneTextBox.Location = new System.Drawing.Point(147, 132);
+            this.cellPhoneTextBox.Name = "cellPhoneTextBox";
+            this.cellPhoneTextBox.Size = new System.Drawing.Size(307, 27);
+            this.cellPhoneTextBox.TabIndex = 85;
+            // 
+            // lastNameTextBox
+            // 
+            this.lastNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "LastName", true));
+            this.lastNameTextBox.Location = new System.Drawing.Point(147, 76);
+            this.lastNameTextBox.Name = "lastNameTextBox";
+            this.lastNameTextBox.Size = new System.Drawing.Size(307, 27);
+            this.lastNameTextBox.TabIndex = 81;
+            // 
+            // addressTextBox
+            // 
+            this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "Address", true));
+            this.addressTextBox.Location = new System.Drawing.Point(147, 104);
+            this.addressTextBox.Name = "addressTextBox";
+            this.addressTextBox.Size = new System.Drawing.Size(307, 27);
+            this.addressTextBox.TabIndex = 83;
+            // 
+            // removeFilterButton
+            // 
+            this.removeFilterButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeFilterButton.Location = new System.Drawing.Point(403, 419);
+            this.removeFilterButton.Name = "removeFilterButton";
+            this.removeFilterButton.Size = new System.Drawing.Size(124, 34);
+            this.removeFilterButton.TabIndex = 77;
+            this.removeFilterButton.Text = "Remove Filter";
+            this.removeFilterButton.UseVisualStyleBackColor = true;
+            // 
+            // filterButton
+            // 
+            this.filterButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.filterButton.Location = new System.Drawing.Point(403, 383);
+            this.filterButton.Name = "filterButton";
+            this.filterButton.Size = new System.Drawing.Size(124, 34);
+            this.filterButton.TabIndex = 78;
+            this.filterButton.Text = "Filter";
+            this.filterButton.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.radioPremium);
+            this.groupBox3.Controls.Add(this.radioRegular);
+            this.groupBox3.Controls.Add(this.radioBasic);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(32, 372);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(365, 87);
+            this.groupBox3.TabIndex = 79;
+            this.groupBox3.TabStop = false;
+            // 
+            // radioRegular
+            // 
+            this.radioRegular.AutoSize = true;
+            this.radioRegular.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioRegular.Location = new System.Drawing.Point(136, 38);
+            this.radioRegular.Name = "radioRegular";
+            this.radioRegular.Size = new System.Drawing.Size(88, 24);
+            this.radioRegular.TabIndex = 75;
+            this.radioRegular.TabStop = true;
+            this.radioRegular.Text = "Regular";
+            this.radioRegular.UseVisualStyleBackColor = true;
+            // 
+            // radioPremium
+            // 
+            this.radioPremium.AutoSize = true;
+            this.radioPremium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioPremium.Location = new System.Drawing.Point(247, 38);
+            this.radioPremium.Name = "radioPremium";
+            this.radioPremium.Size = new System.Drawing.Size(97, 24);
+            this.radioPremium.TabIndex = 76;
+            this.radioPremium.TabStop = true;
+            this.radioPremium.Text = "Premium";
+            this.radioPremium.UseVisualStyleBackColor = true;
+            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -720,111 +812,32 @@
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
             this.dataGridViewTextBoxColumn13.Width = 87;
             // 
-            // groupBox1
+            // memberBindingSource
             // 
-            this.groupBox1.Controls.Add(memberIDLabel);
-            this.groupBox1.Controls.Add(this.memberIDTextBox);
-            this.groupBox1.Controls.Add(this.membershipIDTextBox);
-            this.groupBox1.Controls.Add(firstNameLabel);
-            this.groupBox1.Controls.Add(membershipIDLabel);
-            this.groupBox1.Controls.Add(this.firstNameTextBox);
-            this.groupBox1.Controls.Add(this.cellPhoneTextBox);
-            this.groupBox1.Controls.Add(lastNameLabel);
-            this.groupBox1.Controls.Add(cellPhoneLabel);
-            this.groupBox1.Controls.Add(this.lastNameTextBox);
-            this.groupBox1.Controls.Add(this.addressTextBox);
-            this.groupBox1.Controls.Add(addressLabel);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(551, 143);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(473, 200);
-            this.groupBox1.TabIndex = 72;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Member Detail";
+            this.memberBindingSource.DataMember = "Member";
+            this.memberBindingSource.DataSource = this.cityGymMembershipDataSet;
             // 
-            // memberIDTextBox
+            // cityGymMembershipDataSet
             // 
-            this.memberIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "MemberID", true));
-            this.memberIDTextBox.Location = new System.Drawing.Point(147, 20);
-            this.memberIDTextBox.Name = "memberIDTextBox";
-            this.memberIDTextBox.Size = new System.Drawing.Size(307, 27);
-            this.memberIDTextBox.TabIndex = 77;
+            this.cityGymMembershipDataSet.DataSetName = "CityGymMembershipDataSet";
+            this.cityGymMembershipDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // membershipIDTextBox
+            // memberTableAdapter
             // 
-            this.membershipIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "MembershipID", true));
-            this.membershipIDTextBox.Location = new System.Drawing.Point(147, 160);
-            this.membershipIDTextBox.Name = "membershipIDTextBox";
-            this.membershipIDTextBox.Size = new System.Drawing.Size(307, 27);
-            this.membershipIDTextBox.TabIndex = 93;
+            this.memberTableAdapter.ClearBeforeFill = true;
             // 
-            // firstNameTextBox
+            // tableAdapterManager
             // 
-            this.firstNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "FirstName", true));
-            this.firstNameTextBox.Location = new System.Drawing.Point(147, 48);
-            this.firstNameTextBox.Name = "firstNameTextBox";
-            this.firstNameTextBox.Size = new System.Drawing.Size(307, 27);
-            this.firstNameTextBox.TabIndex = 79;
-            // 
-            // cellPhoneTextBox
-            // 
-            this.cellPhoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "CellPhone", true));
-            this.cellPhoneTextBox.Location = new System.Drawing.Point(147, 132);
-            this.cellPhoneTextBox.Name = "cellPhoneTextBox";
-            this.cellPhoneTextBox.Size = new System.Drawing.Size(307, 27);
-            this.cellPhoneTextBox.TabIndex = 85;
-            // 
-            // lastNameTextBox
-            // 
-            this.lastNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "LastName", true));
-            this.lastNameTextBox.Location = new System.Drawing.Point(147, 76);
-            this.lastNameTextBox.Name = "lastNameTextBox";
-            this.lastNameTextBox.Size = new System.Drawing.Size(307, 27);
-            this.lastNameTextBox.TabIndex = 81;
-            // 
-            // addressTextBox
-            // 
-            this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "Address", true));
-            this.addressTextBox.Location = new System.Drawing.Point(147, 104);
-            this.addressTextBox.Name = "addressTextBox";
-            this.addressTextBox.Size = new System.Drawing.Size(307, 27);
-            this.addressTextBox.TabIndex = 83;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.BookingTableAdapter = null;
+            this.tableAdapterManager.ClassTableAdapter = null;
+            this.tableAdapterManager.MembershipTableAdapter = null;
+            this.tableAdapterManager.MemberTableAdapter = this.memberTableAdapter;
+            this.tableAdapterManager.UpdateOrder = BIT502_5064102_EmmaBaumbach_Assignment_1Task_2.CityGymMembershipDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // bookingTableAdapter
             // 
             this.bookingTableAdapter.ClearBeforeFill = true;
-            // 
-            // removeFilterButton
-            // 
-            this.removeFilterButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removeFilterButton.Location = new System.Drawing.Point(403, 419);
-            this.removeFilterButton.Name = "removeFilterButton";
-            this.removeFilterButton.Size = new System.Drawing.Size(124, 34);
-            this.removeFilterButton.TabIndex = 77;
-            this.removeFilterButton.Text = "Remove Filter";
-            this.removeFilterButton.UseVisualStyleBackColor = true;
-            // 
-            // filterButton
-            // 
-            this.filterButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.filterButton.Location = new System.Drawing.Point(403, 383);
-            this.filterButton.Name = "filterButton";
-            this.filterButton.Size = new System.Drawing.Size(124, 34);
-            this.filterButton.TabIndex = 78;
-            this.filterButton.Text = "Filter";
-            this.filterButton.UseVisualStyleBackColor = true;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.radioFirstName);
-            this.groupBox3.Controls.Add(this.radioMemType);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(32, 372);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(365, 87);
-            this.groupBox3.TabIndex = 79;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Select Filter Method";
             // 
             // SearchMembers
             // 
@@ -861,8 +874,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bookingBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memberBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cityGymMembershipDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberBindingNavigator)).EndInit();
             this.memberBindingNavigator.ResumeLayout(false);
             this.memberBindingNavigator.PerformLayout();
@@ -871,6 +882,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.memberBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cityGymMembershipDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -892,8 +905,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioFirstName;
-        private System.Windows.Forms.RadioButton radioMemType;
+        private System.Windows.Forms.RadioButton radioBasic;
         private CityGymMembershipDataSet cityGymMembershipDataSet;
         private System.Windows.Forms.BindingSource memberBindingSource;
         private CityGymMembershipDataSetTableAdapters.MemberTableAdapter memberTableAdapter;
@@ -941,5 +953,7 @@
         private System.Windows.Forms.Button removeFilterButton;
         private System.Windows.Forms.Button filterButton;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RadioButton radioPremium;
+        private System.Windows.Forms.RadioButton radioRegular;
     }
 }

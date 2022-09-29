@@ -292,6 +292,26 @@ SELECT MembershipID, Description, Cost FROM Membership WHERE (MembershipID = @Me
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MemberDetailsTableAdapter" GeneratorDataComponentClassName="MemberDetailsTableAdapter" Name="MemberDetails" UserDataComponentName="MemberDetailsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CityGymMembershipConnectionString (Settings)" DbObjectName="dbo.MemberDetails" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MemberID, FirstName, LastName, Description, Cost FROM dbo.MemberDetails</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MemberID" DataSetColumn="MemberID" />
+              <Mapping SourceColumn="FirstName" DataSetColumn="FirstName" />
+              <Mapping SourceColumn="LastName" DataSetColumn="LastName" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Cost" DataSetColumn="Cost" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -415,6 +435,35 @@ SELECT MembershipID, Description, Cost FROM Membership WHERE (MembershipID = @Me
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="MemberDetails" msprop:Generator_TableClassName="MemberDetailsDataTable" msprop:Generator_TableVarName="tableMemberDetails" msprop:Generator_TablePropName="MemberDetails" msprop:Generator_RowDeletingName="MemberDetailsRowDeleting" msprop:Generator_RowChangingName="MemberDetailsRowChanging" msprop:Generator_RowEvHandlerName="MemberDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="MemberDetailsRowDeleted" msprop:Generator_UserTableName="MemberDetails" msprop:Generator_RowChangedName="MemberDetailsRowChanged" msprop:Generator_RowEvArgName="MemberDetailsRowChangeEvent" msprop:Generator_RowClassName="MemberDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MemberID" msprop:Generator_ColumnVarNameInTable="columnMemberID" msprop:Generator_ColumnPropNameInRow="MemberID" msprop:Generator_ColumnPropNameInTable="MemberIDColumn" msprop:Generator_UserColumnName="MemberID" type="xs:int" />
+              <xs:element name="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_UserColumnName="FirstName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastName" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_UserColumnName="LastName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cost" msprop:Generator_ColumnVarNameInTable="columnCost" msprop:Generator_ColumnPropNameInRow="Cost" msprop:Generator_ColumnPropNameInTable="CostColumn" msprop:Generator_UserColumnName="Cost" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
@@ -432,6 +481,10 @@ SELECT MembershipID, Description, Cost FROM Membership WHERE (MembershipID = @Me
     <xs:unique name="Membership_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:Membership" />
       <xs:field xpath="mstns:MembershipID" />
+    </xs:unique>
+    <xs:unique name="MemberDetails_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MemberDetails" />
+      <xs:field xpath="mstns:MemberID" />
     </xs:unique>
   </xs:element>
   <xs:annotation>

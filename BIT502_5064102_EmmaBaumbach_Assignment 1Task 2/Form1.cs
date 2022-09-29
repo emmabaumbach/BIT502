@@ -231,17 +231,68 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
             newMemberRow.MemberID = 6;
             newMemberRow.FirstName = firstNameText.Text;
             newMemberRow.LastName = lastNameText.Text;
-            newMemberRow.Address = addressText.Text;
+            newMemberRow.Address = addressText.Text + ", " + cityText.Text;
             newMemberRow.CellPhone = cellPhoneText.Text;
 
-            newMemberRow.DiscountAmount = 0.2M;
-            newMemberRow.ExtraAmount = 21.00M;
-            newMemberRow.TotalAmount = 54.00M;
-            newMemberRow.MembershipID = 3;
-            newMemberRow.ExpiryDate = DateTime.Today.AddMonths(24);
-            newMemberRow.DirectDebit = "Y";
-            newMemberRow._Duration_M_ = 24;
-            newMemberRow.PayFreq = "M";
+            double totalDis = CalcTotalDiscount(baseCost, checkDirectDebit.Checked, duration);
+            double extras = CalcExtras(check247.Checked, checkOnlineVideo.Checked, checkDietConsult.Checked, checkPT.Checked);
+            double netCost = (baseCost + extras) - totalDis;
+            string payFreq = "";
+            if (radioPFWeekly.Checked)
+            {
+                payFreq = "Weekly";
+            }
+            else
+            {
+                payFreq = "Monthly";
+            }
+
+            string directDebit = "";
+            if (checkDirectDebit.Checked)
+            {
+                directDebit = "Y";
+            }
+            else
+            {
+                directDebit = "N";
+            }
+            
+            int membershipTerm = 0;
+            if (month3Radio.Checked)
+            {
+                membershipTerm = 3;
+            }
+            else if (month12Radio.Checked)
+            {
+                membershipTerm = 12;
+            }
+            else
+            {
+                membershipTerm = 24;
+            }
+
+            int membershipID = 0;
+            if (basicRadio.Checked)
+            {
+                membershipID = 1;
+            }
+            else if (regularRadio.Checked)
+            {
+                membershipID = 2;
+            }
+            else
+            {
+                membershipID = 3;
+            }
+            
+            newMemberRow.DiscountAmount = Convert.ToDecimal(totalDis);
+            newMemberRow.ExtraAmount = Convert.ToDecimal(extras);
+            newMemberRow.TotalAmount = Convert.ToDecimal(netCost);
+            newMemberRow.MembershipID = membershipID;
+            newMemberRow.ExpiryDate = DateTime.Today.AddMonths(membershipTerm);
+            newMemberRow.DirectDebit = directDebit;
+            newMemberRow._Duration_M_ = membershipTerm;
+            newMemberRow.PayFreq = payFreq;
 
             // Insert into Dataset
             cityGymMembershipDataSet.Member.Rows.Add(newMemberRow);

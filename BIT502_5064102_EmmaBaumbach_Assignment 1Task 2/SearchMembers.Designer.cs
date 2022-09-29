@@ -35,11 +35,11 @@
             System.Windows.Forms.Label addressLabel;
             System.Windows.Forms.Label cellPhoneLabel;
             System.Windows.Forms.Label membershipIDLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchMembers));
             System.Windows.Forms.Label bookingIDLabel;
             System.Windows.Forms.Label classIDLabel;
             System.Windows.Forms.Label slotLabel;
             System.Windows.Forms.Label memberIDLabel1;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchMembers));
             this.mainMenuButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.addMemberButton = new System.Windows.Forms.Button();
@@ -54,10 +54,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.bookingIDTextBox = new System.Windows.Forms.TextBox();
+            this.bookingBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.memberBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cityGymMembershipDataSet = new BIT502_5064102_EmmaBaumbach_Assignment_1Task_2.CityGymMembershipDataSet();
+            this.memberIDTextBox1 = new System.Windows.Forms.TextBox();
+            this.classIDTextBox = new System.Windows.Forms.TextBox();
+            this.TimeSlotTextBox = new System.Windows.Forms.TextBox();
             this.radioFirstName = new System.Windows.Forms.RadioButton();
             this.radioMemType = new System.Windows.Forms.RadioButton();
-            this.cityGymMembershipDataSet = new BIT502_5064102_EmmaBaumbach_Assignment_1Task_2.CityGymMembershipDataSet();
-            this.memberBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.memberTableAdapter = new BIT502_5064102_EmmaBaumbach_Assignment_1Task_2.CityGymMembershipDataSetTableAdapters.MemberTableAdapter();
             this.tableAdapterManager = new BIT502_5064102_EmmaBaumbach_Assignment_1Task_2.CityGymMembershipDataSetTableAdapters.TableAdapterManager();
             this.memberBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
@@ -94,12 +99,7 @@
             this.cellPhoneTextBox = new System.Windows.Forms.TextBox();
             this.lastNameTextBox = new System.Windows.Forms.TextBox();
             this.addressTextBox = new System.Windows.Forms.TextBox();
-            this.bookingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bookingTableAdapter = new BIT502_5064102_EmmaBaumbach_Assignment_1Task_2.CityGymMembershipDataSetTableAdapters.BookingTableAdapter();
-            this.bookingIDTextBox = new System.Windows.Forms.TextBox();
-            this.classIDTextBox = new System.Windows.Forms.TextBox();
-            this.slotTextBox = new System.Windows.Forms.TextBox();
-            this.memberIDTextBox1 = new System.Windows.Forms.TextBox();
             this.removeFilterButton = new System.Windows.Forms.Button();
             this.filterButton = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -114,13 +114,13 @@
             slotLabel = new System.Windows.Forms.Label();
             memberIDLabel1 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cityGymMembershipDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookingBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cityGymMembershipDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberBindingNavigator)).BeginInit();
             this.memberBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.memberDataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bookingBindingSource)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -183,6 +183,46 @@
             membershipIDLabel.Size = new System.Drawing.Size(128, 20);
             membershipIDLabel.TabIndex = 92;
             membershipIDLabel.Text = "Membership ID:";
+            // 
+            // bookingIDLabel
+            // 
+            bookingIDLabel.AutoSize = true;
+            bookingIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            bookingIDLabel.Location = new System.Drawing.Point(6, 23);
+            bookingIDLabel.Name = "bookingIDLabel";
+            bookingIDLabel.Size = new System.Drawing.Size(96, 20);
+            bookingIDLabel.TabIndex = 76;
+            bookingIDLabel.Text = "Booking ID:";
+            // 
+            // classIDLabel
+            // 
+            classIDLabel.AutoSize = true;
+            classIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            classIDLabel.Location = new System.Drawing.Point(6, 51);
+            classIDLabel.Name = "classIDLabel";
+            classIDLabel.Size = new System.Drawing.Size(79, 20);
+            classIDLabel.TabIndex = 78;
+            classIDLabel.Text = "Class ID:";
+            // 
+            // slotLabel
+            // 
+            slotLabel.AutoSize = true;
+            slotLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            slotLabel.Location = new System.Drawing.Point(6, 79);
+            slotLabel.Name = "slotLabel";
+            slotLabel.Size = new System.Drawing.Size(85, 20);
+            slotLabel.TabIndex = 80;
+            slotLabel.Text = "Time Slot:";
+            // 
+            // memberIDLabel1
+            // 
+            memberIDLabel1.AutoSize = true;
+            memberIDLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            memberIDLabel1.Location = new System.Drawing.Point(6, 108);
+            memberIDLabel1.Name = "memberIDLabel1";
+            memberIDLabel1.Size = new System.Drawing.Size(97, 20);
+            memberIDLabel1.TabIndex = 82;
+            memberIDLabel1.Text = "Member ID:";
             // 
             // mainMenuButton
             // 
@@ -327,7 +367,7 @@
             this.groupBox2.Controls.Add(classIDLabel);
             this.groupBox2.Controls.Add(memberIDLabel1);
             this.groupBox2.Controls.Add(this.classIDTextBox);
-            this.groupBox2.Controls.Add(this.slotTextBox);
+            this.groupBox2.Controls.Add(this.TimeSlotTextBox);
             this.groupBox2.Controls.Add(slotLabel);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(551, 349);
@@ -336,6 +376,57 @@
             this.groupBox2.TabIndex = 73;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Booking Detail";
+            // 
+            // bookingIDTextBox
+            // 
+            this.bookingIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookingBindingSource, "BookingID", true));
+            this.bookingIDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bookingIDTextBox.Location = new System.Drawing.Point(147, 20);
+            this.bookingIDTextBox.Name = "bookingIDTextBox";
+            this.bookingIDTextBox.Size = new System.Drawing.Size(307, 27);
+            this.bookingIDTextBox.TabIndex = 77;
+            // 
+            // bookingBindingSource
+            // 
+            this.bookingBindingSource.DataMember = "FK_Booking_Member";
+            this.bookingBindingSource.DataSource = this.memberBindingSource;
+            // 
+            // memberBindingSource
+            // 
+            this.memberBindingSource.DataMember = "Member";
+            this.memberBindingSource.DataSource = this.cityGymMembershipDataSet;
+            // 
+            // cityGymMembershipDataSet
+            // 
+            this.cityGymMembershipDataSet.DataSetName = "CityGymMembershipDataSet";
+            this.cityGymMembershipDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // memberIDTextBox1
+            // 
+            this.memberIDTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookingBindingSource, "MemberID", true));
+            this.memberIDTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.memberIDTextBox1.Location = new System.Drawing.Point(147, 105);
+            this.memberIDTextBox1.Name = "memberIDTextBox1";
+            this.memberIDTextBox1.Size = new System.Drawing.Size(307, 27);
+            this.memberIDTextBox1.TabIndex = 83;
+            // 
+            // classIDTextBox
+            // 
+            this.classIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookingBindingSource, "ClassID", true));
+            this.classIDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.classIDTextBox.Location = new System.Drawing.Point(147, 48);
+            this.classIDTextBox.Name = "classIDTextBox";
+            this.classIDTextBox.Size = new System.Drawing.Size(307, 27);
+            this.classIDTextBox.TabIndex = 79;
+            // 
+            // TimeSlotTextBox
+            // 
+            this.TimeSlotTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookingBindingSource, "Time Slot", true));
+            this.TimeSlotTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimeSlotTextBox.Location = new System.Drawing.Point(147, 76);
+            this.TimeSlotTextBox.Name = "TimeSlotTextBox";
+            this.TimeSlotTextBox.Size = new System.Drawing.Size(307, 27);
+            this.TimeSlotTextBox.TabIndex = 81;
             // 
             // radioFirstName
             // 
@@ -360,16 +451,6 @@
             this.radioMemType.TabStop = true;
             this.radioMemType.Text = "Membership type";
             this.radioMemType.UseVisualStyleBackColor = true;
-            // 
-            // cityGymMembershipDataSet
-            // 
-            this.cityGymMembershipDataSet.DataSetName = "CityGymMembershipDataSet";
-            this.cityGymMembershipDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // memberBindingSource
-            // 
-            this.memberBindingSource.DataMember = "Member";
-            this.memberBindingSource.DataSource = this.cityGymMembershipDataSet;
             // 
             // memberTableAdapter
             // 
@@ -709,90 +790,9 @@
             this.addressTextBox.Size = new System.Drawing.Size(307, 27);
             this.addressTextBox.TabIndex = 83;
             // 
-            // bookingBindingSource
-            // 
-            this.bookingBindingSource.DataMember = "FK_Booking_Member";
-            this.bookingBindingSource.DataSource = this.memberBindingSource;
-            // 
             // bookingTableAdapter
             // 
             this.bookingTableAdapter.ClearBeforeFill = true;
-            // 
-            // bookingIDLabel
-            // 
-            bookingIDLabel.AutoSize = true;
-            bookingIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            bookingIDLabel.Location = new System.Drawing.Point(6, 23);
-            bookingIDLabel.Name = "bookingIDLabel";
-            bookingIDLabel.Size = new System.Drawing.Size(96, 20);
-            bookingIDLabel.TabIndex = 76;
-            bookingIDLabel.Text = "Booking ID:";
-            // 
-            // bookingIDTextBox
-            // 
-            this.bookingIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookingBindingSource, "BookingID", true));
-            this.bookingIDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bookingIDTextBox.Location = new System.Drawing.Point(147, 20);
-            this.bookingIDTextBox.Name = "bookingIDTextBox";
-            this.bookingIDTextBox.Size = new System.Drawing.Size(307, 27);
-            this.bookingIDTextBox.TabIndex = 77;
-            // 
-            // classIDLabel
-            // 
-            classIDLabel.AutoSize = true;
-            classIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            classIDLabel.Location = new System.Drawing.Point(6, 51);
-            classIDLabel.Name = "classIDLabel";
-            classIDLabel.Size = new System.Drawing.Size(79, 20);
-            classIDLabel.TabIndex = 78;
-            classIDLabel.Text = "Class ID:";
-            // 
-            // classIDTextBox
-            // 
-            this.classIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookingBindingSource, "ClassID", true));
-            this.classIDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.classIDTextBox.Location = new System.Drawing.Point(147, 48);
-            this.classIDTextBox.Name = "classIDTextBox";
-            this.classIDTextBox.Size = new System.Drawing.Size(307, 27);
-            this.classIDTextBox.TabIndex = 79;
-            // 
-            // slotLabel
-            // 
-            slotLabel.AutoSize = true;
-            slotLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            slotLabel.Location = new System.Drawing.Point(6, 79);
-            slotLabel.Name = "slotLabel";
-            slotLabel.Size = new System.Drawing.Size(85, 20);
-            slotLabel.TabIndex = 80;
-            slotLabel.Text = "Time Slot:";
-            // 
-            // slotTextBox
-            // 
-            this.slotTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookingBindingSource, "Slot", true));
-            this.slotTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.slotTextBox.Location = new System.Drawing.Point(147, 76);
-            this.slotTextBox.Name = "slotTextBox";
-            this.slotTextBox.Size = new System.Drawing.Size(307, 27);
-            this.slotTextBox.TabIndex = 81;
-            // 
-            // memberIDLabel1
-            // 
-            memberIDLabel1.AutoSize = true;
-            memberIDLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            memberIDLabel1.Location = new System.Drawing.Point(6, 108);
-            memberIDLabel1.Name = "memberIDLabel1";
-            memberIDLabel1.Size = new System.Drawing.Size(97, 20);
-            memberIDLabel1.TabIndex = 82;
-            memberIDLabel1.Text = "Member ID:";
-            // 
-            // memberIDTextBox1
-            // 
-            this.memberIDTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookingBindingSource, "MemberID", true));
-            this.memberIDTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.memberIDTextBox1.Location = new System.Drawing.Point(147, 105);
-            this.memberIDTextBox1.Name = "memberIDTextBox1";
-            this.memberIDTextBox1.Size = new System.Drawing.Size(307, 27);
-            this.memberIDTextBox1.TabIndex = 83;
             // 
             // removeFilterButton
             // 
@@ -860,15 +860,15 @@
             this.Load += new System.EventHandler(this.SearchMembers_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cityGymMembershipDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookingBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cityGymMembershipDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberBindingNavigator)).EndInit();
             this.memberBindingNavigator.ResumeLayout(false);
             this.memberBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.memberDataGridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bookingBindingSource)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
@@ -937,7 +937,7 @@
         private System.Windows.Forms.TextBox bookingIDTextBox;
         private System.Windows.Forms.TextBox memberIDTextBox1;
         private System.Windows.Forms.TextBox classIDTextBox;
-        private System.Windows.Forms.TextBox slotTextBox;
+        private System.Windows.Forms.TextBox TimeSlotTextBox;
         private System.Windows.Forms.Button removeFilterButton;
         private System.Windows.Forms.Button filterButton;
         private System.Windows.Forms.GroupBox groupBox3;

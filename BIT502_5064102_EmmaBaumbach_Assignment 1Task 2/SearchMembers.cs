@@ -12,6 +12,8 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 {
     public partial class SearchMembers : Form
     {
+        int memTypeFilter = 0;
+
         public SearchMembers()
         {
             InitializeComponent();
@@ -20,13 +22,18 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         private void mainMenuButton_Click(object sender, EventArgs e)
         // Opens Main Menu form
         {
-            new MainMenu().Show();
+            Application.OpenForms["MainMenu"].BringToFront();
         }
 
         private void addMemberButton_Click(object sender, EventArgs e)
         // Opens Add Member form
         {
-            new AddMember().Show();
+            if (Application.OpenForms.OfType<AddMember>().Count() == 1)
+                Application.OpenForms.OfType<AddMember>().First().Close();
+
+            AddMember addMember = new AddMember();
+            addMember.Show();
+            //new AddMember().Show();
         }
 
         private void bookClassButton_Click(object sender, EventArgs e)
@@ -94,6 +101,35 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
             // Use this DataView as the DataSource for the GridView
             memberDataGridView.DataSource = memberDataView;
             
+        }
+
+        private void filterButton_Click(object sender, EventArgs e)
+        {
+            DataView membershipTypeDataView = new DataView(cityGymMembershipDataSet.Member);
+
+            string filter = "";
+
+            filter = "[MembershipID] LIKE '" + memTypeFilter;
+
+            membershipTypeDataView.RowFilter = filter;
+
+            // Use this DataView as the DataSource for the GridView
+            memberDataGridView.DataSource = membershipTypeDataView;
+        }
+
+        private void radioPremium_CheckedChanged(object sender, EventArgs e)
+        {
+            memTypeFilter += 3;
+        }
+        
+        private void radioRegular_CheckedChanged(object sender, EventArgs e)
+        {
+            memTypeFilter = 2;
+        }
+
+        private void radioBasic_CheckedChanged(object sender, EventArgs e)
+        {
+            memTypeFilter = 1;
         }
     }
 }

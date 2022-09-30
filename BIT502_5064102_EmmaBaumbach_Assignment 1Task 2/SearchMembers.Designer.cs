@@ -671,6 +671,7 @@
             this.filterButton.TabIndex = 78;
             this.filterButton.Text = "Filter";
             this.filterButton.UseVisualStyleBackColor = true;
+            this.filterButton.Click += new System.EventHandler(this.filterButton_Click);
             // 
             // groupBox3
             // 
@@ -707,6 +708,7 @@
             this.radioPremium.TabStop = true;
             this.radioPremium.Text = "Premium";
             this.radioPremium.UseVisualStyleBackColor = true;
+            this.radioPremium.CheckedChanged += new System.EventHandler(this.radioPremium_CheckedChanged);
             // 
             // dataGridViewTextBoxColumn1
             // 

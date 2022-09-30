@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookAClass));
             this.helpButton = new System.Windows.Forms.Button();
-            this.searchButton = new System.Windows.Forms.Button();
+            this.searchMembersButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -72,16 +72,16 @@
             this.helpButton.UseVisualStyleBackColor = true;
             this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
             // 
-            // searchButton
+            // searchMembersButton
             // 
-            this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchButton.Location = new System.Drawing.Point(232, 612);
-            this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(167, 34);
-            this.searchButton.TabIndex = 1;
-            this.searchButton.Text = "Search Members";
-            this.searchButton.UseVisualStyleBackColor = true;
-            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            this.searchMembersButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchMembersButton.Location = new System.Drawing.Point(232, 612);
+            this.searchMembersButton.Name = "searchMembersButton";
+            this.searchMembersButton.Size = new System.Drawing.Size(167, 34);
+            this.searchMembersButton.TabIndex = 1;
+            this.searchMembersButton.Text = "Search Members";
+            this.searchMembersButton.UseVisualStyleBackColor = true;
+            this.searchMembersButton.Click += new System.EventHandler(this.searchMembersButton_Click);
             // 
             // exitButton
             // 
@@ -373,7 +373,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.exitButton);
-            this.Controls.Add(this.searchButton);
+            this.Controls.Add(this.searchMembersButton);
             this.Controls.Add(this.helpButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BookAClass";
@@ -393,7 +393,7 @@
         #endregion
 
         private System.Windows.Forms.Button helpButton;
-        private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.Button searchMembersButton;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

@@ -25,7 +25,12 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         private void addMember_Click(object sender, EventArgs e)
         // Opens Add Member form
         {
-            new AddMember().Show();
+            if (Application.OpenForms.OfType<AddMember>().Count() == 1)
+                Application.OpenForms.OfType<AddMember>().First().Close();
+
+            AddMember addMember = new AddMember();
+            addMember.Show();
+            //new AddMember().Show();
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
@@ -50,7 +55,12 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         private void searchButton_Click(object sender, EventArgs e)
         // Opens Search Members form
         {
-            new SearchMembers().Show();
+            if (Application.OpenForms.OfType<SearchMembers>().Count() == 1)
+                Application.OpenForms.OfType<SearchMembers>().First().Close();
+
+            SearchMembers searchMembers = new SearchMembers();
+            searchMembers.Show();
+            //new SearchMembers().Show();
         }
     }
 }

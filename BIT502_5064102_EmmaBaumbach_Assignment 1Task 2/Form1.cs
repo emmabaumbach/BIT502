@@ -301,10 +301,6 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
             this.tableAdapterManager.UpdateAll(cityGymMembershipDataSet);
             //Refresh Student Course Details to update the DataGridView for the user.
             this.memberTableAdapter.Fill(this.cityGymMembershipDataSet.Member);
-
-
-
-
         }
 
         public AddMember()
@@ -623,7 +619,7 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         private void MainMenuButton_Click(object sender, EventArgs e) 
         // Opens Main Menu form
         {
-            new MainMenu().Show();
+            Application.OpenForms["MainMenu"].BringToFront();
 
         }
 
@@ -633,17 +629,21 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
             new BookAClass().Show();
         }
 
-        private void searchButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void memberBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
             this.memberBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.cityGymMembershipDataSet);
 
+        }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<SearchMembers>().Count() == 1)
+                Application.OpenForms.OfType<SearchMembers>().First().Close();
+
+            SearchMembers searchMembers = new SearchMembers();
+            searchMembers.Show();
         }
     }
 }

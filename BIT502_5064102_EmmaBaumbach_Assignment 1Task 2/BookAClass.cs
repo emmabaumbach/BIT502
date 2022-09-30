@@ -28,8 +28,7 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         private void mainMenuButton_Click(object sender, EventArgs e)
         // Opens the Main Menu form
         {
-            
-            new MainMenu().Show();
+            Application.OpenForms["MainMenu"].BringToFront();
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -43,16 +42,30 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 
         }
 
-        private void searchButton_Click(object sender, EventArgs e)
+        private void searchMembersButton_Click(object sender, EventArgs e)
         // Opens Search Members form
         {
-            new SearchMembers().Show();
+            if (Application.OpenForms.OfType<SearchMembers>().Count() == 1)
+            {
+                Application.OpenForms.OfType<SearchMembers>().First().BringToFront();
+            }
+            else
+            {
+                new SearchMembers().Show();
+            }         
         }
 
         private void addMemberButton_Click(object sender, EventArgs e)
         // Opens Add Member form
         {
-            new AddMember().Show();
+            if (Application.OpenForms.OfType<AddMember>().Count() == 1)
+            {
+                Application.OpenForms.OfType<AddMember>().First().BringToFront();
+            }
+            else
+            {
+                new AddMember().Show();
+            }
         }
     }
 }

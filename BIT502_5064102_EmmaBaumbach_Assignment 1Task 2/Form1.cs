@@ -225,7 +225,6 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 
             wr.Close();
 
-
             CityGymMembershipDataSet.MemberRow newMemberRow = cityGymMembershipDataSet.Member.NewMemberRow();
 
             newMemberRow.MemberID = 6;
@@ -296,10 +295,9 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 
             // Insert into Dataset
             cityGymMembershipDataSet.Member.Rows.Add(newMemberRow);
-            // Commit to DB using the table adapter manager
             this.Validate();
-            this.tableAdapterManager.UpdateAll(cityGymMembershipDataSet);
-            //Refresh Student Course Details to update the DataGridView for the user.
+            this.memberBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.cityGymMembershipDataSet);
             this.memberTableAdapter.Fill(this.cityGymMembershipDataSet.Member);
         }
 
@@ -626,20 +624,19 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         }
 
         private void BookAClassButton_Click(object sender, EventArgs e) 
-        // If BookAClass Form is open then brings to front, otherwise opens new
+        // If BookAClass Form is open then closes original and opens new
         {
             if (Application.OpenForms.OfType<BookAClass>().Count() == 1)
             {
-                Application.OpenForms.OfType<BookAClass>().First().BringToFront();
+                Application.OpenForms.OfType<BookAClass>().First().Close();
+                new BookAClass().Show();
             }
             else
             {
-                AddMember addMember = (AddMember)Application.OpenForms["AddMember"];
-                addMember.Close();
-
                 new BookAClass().Show();
-
             }
+            Application.OpenForms.OfType<AddMember>().First().Close();
+
         }
 
         private void memberBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -662,6 +659,7 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
             {
                 new SearchMembers().Show();
             }
+            Application.OpenForms.OfType<AddMember>().First().Close();
         }
     }
 }

@@ -49,12 +49,14 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         {
             if (Application.OpenForms.OfType<SearchMembers>().Count() == 1)
             {
-                Application.OpenForms.OfType<SearchMembers>().First().BringToFront();
+                Application.OpenForms.OfType<SearchMembers>().First().Close();
+                new SearchMembers().Show();
             }
             else
             {
                 new SearchMembers().Show();
-            }         
+            }
+            Application.OpenForms.OfType<BookAClass>().First().Close();
         }
 
         private void addMemberButton_Click(object sender, EventArgs e)
@@ -62,12 +64,14 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         {
             if (Application.OpenForms.OfType<AddMember>().Count() == 1)
             {
-                Application.OpenForms.OfType<AddMember>().First().BringToFront();
+                Application.OpenForms.OfType<AddMember>().First().Close();
+                new AddMember().Show();
             }
             else
             {
                 new AddMember().Show();
             }
+            Application.OpenForms.OfType<BookAClass>().First().Close();
         }
     }
 }

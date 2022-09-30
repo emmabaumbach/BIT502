@@ -193,7 +193,7 @@
             // 
             slotLabel.AutoSize = true;
             slotLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            slotLabel.Location = new System.Drawing.Point(6, 79);
+            slotLabel.Location = new System.Drawing.Point(6, 110);
             slotLabel.Name = "slotLabel";
             slotLabel.Size = new System.Drawing.Size(85, 20);
             slotLabel.TabIndex = 80;
@@ -223,7 +223,7 @@
             // 
             descriptionLabel.AutoSize = true;
             descriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            descriptionLabel.Location = new System.Drawing.Point(6, 161);
+            descriptionLabel.Location = new System.Drawing.Point(6, 162);
             descriptionLabel.Name = "descriptionLabel";
             descriptionLabel.Size = new System.Drawing.Size(106, 20);
             descriptionLabel.TabIndex = 81;
@@ -232,25 +232,27 @@
             // descriptionLabel1
             // 
             descriptionLabel1.AutoSize = true;
-            descriptionLabel1.Location = new System.Drawing.Point(46, 281);
+            descriptionLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            descriptionLabel1.Location = new System.Drawing.Point(6, 80);
             descriptionLabel1.Name = "descriptionLabel1";
-            descriptionLabel1.Size = new System.Drawing.Size(83, 17);
+            descriptionLabel1.Size = new System.Drawing.Size(100, 20);
             descriptionLabel1.TabIndex = 79;
             descriptionLabel1.Text = "Description:";
             // 
             // instructorLabel
             // 
             instructorLabel.AutoSize = true;
-            instructorLabel.Location = new System.Drawing.Point(287, 281);
+            instructorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            instructorLabel.Location = new System.Drawing.Point(6, 137);
             instructorLabel.Name = "instructorLabel";
-            instructorLabel.Size = new System.Drawing.Size(71, 17);
+            instructorLabel.Size = new System.Drawing.Size(85, 20);
             instructorLabel.TabIndex = 80;
             instructorLabel.Text = "Instructor:";
             // 
             // mainMenuButton
             // 
             this.mainMenuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainMenuButton.Location = new System.Drawing.Point(394, 765);
+            this.mainMenuButton.Location = new System.Drawing.Point(394, 782);
             this.mainMenuButton.Name = "mainMenuButton";
             this.mainMenuButton.Size = new System.Drawing.Size(167, 34);
             this.mainMenuButton.TabIndex = 0;
@@ -261,7 +263,7 @@
             // exitButton
             // 
             this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitButton.Location = new System.Drawing.Point(916, 785);
+            this.exitButton.Location = new System.Drawing.Point(916, 802);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(108, 37);
             this.exitButton.TabIndex = 1;
@@ -272,7 +274,7 @@
             // addMemberButton
             // 
             this.addMemberButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addMemberButton.Location = new System.Drawing.Point(567, 765);
+            this.addMemberButton.Location = new System.Drawing.Point(567, 782);
             this.addMemberButton.Name = "addMemberButton";
             this.addMemberButton.Size = new System.Drawing.Size(166, 34);
             this.addMemberButton.TabIndex = 2;
@@ -283,7 +285,7 @@
             // searchButton
             // 
             this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchButton.Location = new System.Drawing.Point(419, 194);
+            this.searchButton.Location = new System.Drawing.Point(419, 203);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(108, 34);
             this.searchButton.TabIndex = 3;
@@ -294,7 +296,7 @@
             // clearButton
             // 
             this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearButton.Location = new System.Drawing.Point(419, 234);
+            this.clearButton.Location = new System.Drawing.Point(419, 243);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(108, 34);
             this.clearButton.TabIndex = 4;
@@ -305,7 +307,7 @@
             // bookClassButton
             // 
             this.bookClassButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bookClassButton.Location = new System.Drawing.Point(739, 765);
+            this.bookClassButton.Location = new System.Drawing.Point(739, 782);
             this.bookClassButton.Name = "bookClassButton";
             this.bookClassButton.Size = new System.Drawing.Size(167, 34);
             this.bookClassButton.TabIndex = 5;
@@ -316,7 +318,7 @@
             // helpButton
             // 
             this.helpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.helpButton.Location = new System.Drawing.Point(916, 748);
+            this.helpButton.Location = new System.Drawing.Point(916, 765);
             this.helpButton.Name = "helpButton";
             this.helpButton.Size = new System.Drawing.Size(108, 31);
             this.helpButton.TabIndex = 6;
@@ -326,7 +328,7 @@
             // 
             // searchTextBox
             // 
-            this.searchTextBox.Location = new System.Drawing.Point(123, 157);
+            this.searchTextBox.Location = new System.Drawing.Point(123, 166);
             this.searchTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(404, 22);
@@ -336,7 +338,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(45, 157);
+            this.label3.Location = new System.Drawing.Point(45, 166);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 20);
             this.label3.TabIndex = 65;
@@ -346,7 +348,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(28, 125);
+            this.label4.Location = new System.Drawing.Point(28, 134);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(168, 24);
             this.label4.TabIndex = 64;
@@ -356,7 +358,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(410, 89);
+            this.label2.Location = new System.Drawing.Point(410, 85);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(197, 29);
             this.label2.TabIndex = 68;
@@ -366,7 +368,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(411, 43);
+            this.label1.Location = new System.Drawing.Point(411, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(184, 46);
             this.label1.TabIndex = 67;
@@ -376,7 +378,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(28, 337);
+            this.label6.Location = new System.Drawing.Point(28, 340);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(207, 24);
             this.label6.TabIndex = 71;
@@ -384,16 +386,20 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(instructorLabel);
             this.groupBox2.Controls.Add(bookingIDLabel);
+            this.groupBox2.Controls.Add(this.instructorTextBox);
             this.groupBox2.Controls.Add(this.bookingIDTextBox);
+            this.groupBox2.Controls.Add(descriptionLabel1);
             this.groupBox2.Controls.Add(classIDLabel);
+            this.groupBox2.Controls.Add(this.descriptionTextBox1);
             this.groupBox2.Controls.Add(this.classIDTextBox);
             this.groupBox2.Controls.Add(this.TimeSlotTextBox);
             this.groupBox2.Controls.Add(slotLabel);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(551, 383);
+            this.groupBox2.Location = new System.Drawing.Point(551, 340);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(474, 165);
+            this.groupBox2.Size = new System.Drawing.Size(474, 181);
             this.groupBox2.TabIndex = 73;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Booking Detail";
@@ -435,7 +441,7 @@
             // 
             this.TimeSlotTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookingBindingSource, "Time Slot", true));
             this.TimeSlotTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TimeSlotTextBox.Location = new System.Drawing.Point(147, 76);
+            this.TimeSlotTextBox.Location = new System.Drawing.Point(147, 107);
             this.TimeSlotTextBox.Name = "TimeSlotTextBox";
             this.TimeSlotTextBox.Size = new System.Drawing.Size(307, 27);
             this.TimeSlotTextBox.TabIndex = 81;
@@ -444,7 +450,7 @@
             // 
             this.radioBasic.AutoSize = true;
             this.radioBasic.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBasic.Location = new System.Drawing.Point(28, 38);
+            this.radioBasic.Location = new System.Drawing.Point(17, 30);
             this.radioBasic.Name = "radioBasic";
             this.radioBasic.Size = new System.Drawing.Size(73, 24);
             this.radioBasic.TabIndex = 74;
@@ -479,7 +485,7 @@
             this.memberBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.memberBindingNavigator.Name = "memberBindingNavigator";
             this.memberBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.memberBindingNavigator.Size = new System.Drawing.Size(1064, 27);
+            this.memberBindingNavigator.Size = new System.Drawing.Size(1061, 27);
             this.memberBindingNavigator.TabIndex = 76;
             this.memberBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -597,7 +603,7 @@
             this.dataGridViewTextBoxColumn12,
             this.dataGridViewTextBoxColumn13});
             this.memberDataGridView.DataSource = this.memberBindingSource;
-            this.memberDataGridView.Location = new System.Drawing.Point(32, 510);
+            this.memberDataGridView.Location = new System.Drawing.Point(32, 533);
             this.memberDataGridView.Name = "memberDataGridView";
             this.memberDataGridView.RowTemplate.Height = 24;
             this.memberDataGridView.Size = new System.Drawing.Size(992, 220);
@@ -722,7 +728,7 @@
             this.groupBox1.Controls.Add(this.addressTextBox);
             this.groupBox1.Controls.Add(addressLabel);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(551, 143);
+            this.groupBox1.Location = new System.Drawing.Point(551, 134);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(473, 200);
             this.groupBox1.TabIndex = 72;
@@ -732,6 +738,7 @@
             // descriptionTextBox
             // 
             this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberDetailsBindingSource1, "Description", true));
+            this.descriptionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descriptionTextBox.Location = new System.Drawing.Point(147, 161);
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.Size = new System.Drawing.Size(307, 27);
@@ -745,6 +752,7 @@
             // memberIDTextBox
             // 
             this.memberIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "MemberID", true));
+            this.memberIDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.memberIDTextBox.Location = new System.Drawing.Point(147, 20);
             this.memberIDTextBox.Name = "memberIDTextBox";
             this.memberIDTextBox.Size = new System.Drawing.Size(307, 27);
@@ -753,6 +761,7 @@
             // firstNameTextBox
             // 
             this.firstNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "FirstName", true));
+            this.firstNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstNameTextBox.Location = new System.Drawing.Point(147, 48);
             this.firstNameTextBox.Name = "firstNameTextBox";
             this.firstNameTextBox.Size = new System.Drawing.Size(307, 27);
@@ -761,6 +770,7 @@
             // cellPhoneTextBox
             // 
             this.cellPhoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "CellPhone", true));
+            this.cellPhoneTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cellPhoneTextBox.Location = new System.Drawing.Point(147, 132);
             this.cellPhoneTextBox.Name = "cellPhoneTextBox";
             this.cellPhoneTextBox.Size = new System.Drawing.Size(307, 27);
@@ -769,6 +779,7 @@
             // lastNameTextBox
             // 
             this.lastNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "LastName", true));
+            this.lastNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lastNameTextBox.Location = new System.Drawing.Point(147, 76);
             this.lastNameTextBox.Name = "lastNameTextBox";
             this.lastNameTextBox.Size = new System.Drawing.Size(307, 27);
@@ -777,6 +788,7 @@
             // addressTextBox
             // 
             this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "Address", true));
+            this.addressTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addressTextBox.Location = new System.Drawing.Point(147, 104);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Size = new System.Drawing.Size(307, 27);
@@ -785,7 +797,7 @@
             // removeFilterButton
             // 
             this.removeFilterButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removeFilterButton.Location = new System.Drawing.Point(403, 419);
+            this.removeFilterButton.Location = new System.Drawing.Point(403, 405);
             this.removeFilterButton.Name = "removeFilterButton";
             this.removeFilterButton.Size = new System.Drawing.Size(124, 34);
             this.removeFilterButton.TabIndex = 77;
@@ -795,7 +807,7 @@
             // filterButton
             // 
             this.filterButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.filterButton.Location = new System.Drawing.Point(403, 383);
+            this.filterButton.Location = new System.Drawing.Point(403, 369);
             this.filterButton.Name = "filterButton";
             this.filterButton.Size = new System.Drawing.Size(124, 34);
             this.filterButton.TabIndex = 78;
@@ -809,9 +821,9 @@
             this.groupBox3.Controls.Add(this.radioRegular);
             this.groupBox3.Controls.Add(this.radioBasic);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(32, 372);
+            this.groupBox3.Location = new System.Drawing.Point(32, 361);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(365, 87);
+            this.groupBox3.Size = new System.Drawing.Size(365, 78);
             this.groupBox3.TabIndex = 79;
             this.groupBox3.TabStop = false;
             // 
@@ -819,7 +831,7 @@
             // 
             this.radioPremium.AutoSize = true;
             this.radioPremium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioPremium.Location = new System.Drawing.Point(247, 38);
+            this.radioPremium.Location = new System.Drawing.Point(243, 30);
             this.radioPremium.Name = "radioPremium";
             this.radioPremium.Size = new System.Drawing.Size(97, 24);
             this.radioPremium.TabIndex = 76;
@@ -832,7 +844,7 @@
             // 
             this.radioRegular.AutoSize = true;
             this.radioRegular.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioRegular.Location = new System.Drawing.Point(136, 38);
+            this.radioRegular.Location = new System.Drawing.Point(128, 30);
             this.radioRegular.Name = "radioRegular";
             this.radioRegular.Size = new System.Drawing.Size(88, 24);
             this.radioRegular.TabIndex = 75;
@@ -878,17 +890,19 @@
             // descriptionTextBox1
             // 
             this.descriptionTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookingClassDetailsBindingSource, "Description", true));
-            this.descriptionTextBox1.Location = new System.Drawing.Point(135, 278);
+            this.descriptionTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionTextBox1.Location = new System.Drawing.Point(147, 77);
             this.descriptionTextBox1.Name = "descriptionTextBox1";
-            this.descriptionTextBox1.Size = new System.Drawing.Size(100, 22);
+            this.descriptionTextBox1.Size = new System.Drawing.Size(307, 27);
             this.descriptionTextBox1.TabIndex = 80;
             // 
             // instructorTextBox
             // 
             this.instructorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bookingClassDetailsBindingSource, "Instructor", true));
-            this.instructorTextBox.Location = new System.Drawing.Point(364, 278);
+            this.instructorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.instructorTextBox.Location = new System.Drawing.Point(147, 137);
             this.instructorTextBox.Name = "instructorTextBox";
-            this.instructorTextBox.Size = new System.Drawing.Size(100, 22);
+            this.instructorTextBox.Size = new System.Drawing.Size(308, 27);
             this.instructorTextBox.TabIndex = 81;
             // 
             // membershipBindingSource
@@ -905,11 +919,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(1064, 847);
-            this.Controls.Add(instructorLabel);
-            this.Controls.Add(this.instructorTextBox);
-            this.Controls.Add(descriptionLabel1);
-            this.Controls.Add(this.descriptionTextBox1);
+            this.ClientSize = new System.Drawing.Size(1061, 911);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.filterButton);
             this.Controls.Add(this.removeFilterButton);

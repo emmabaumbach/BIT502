@@ -26,8 +26,10 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         }
 
         private void mainMenuButton_Click(object sender, EventArgs e)
-        // Opens the Main Menu form
+        // Brings forward MainMenu
         {
+            BookAClass bookAClass = (BookAClass)Application.OpenForms["BookAClass"];
+            bookAClass.Close();
             Application.OpenForms["MainMenu"].BringToFront();
         }
 
@@ -43,7 +45,7 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         }
 
         private void searchMembersButton_Click(object sender, EventArgs e)
-        // Opens Search Members form
+        // If SearchMembers Form is open then brings to front, otherwise opens new
         {
             if (Application.OpenForms.OfType<SearchMembers>().Count() == 1)
             {
@@ -56,7 +58,7 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         }
 
         private void addMemberButton_Click(object sender, EventArgs e)
-        // Opens Add Member form
+        // If AddMembers Form is open then brings to front, otherwise opens new
         {
             if (Application.OpenForms.OfType<AddMember>().Count() == 1)
             {

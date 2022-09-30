@@ -616,17 +616,30 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
             MessageBox.Show(helpMessage, messageBoxTitle);
         }
 
-        private void MainMenuButton_Click(object sender, EventArgs e) 
-        // Opens Main Menu form
+        private void MainMenuButton_Click(object sender, EventArgs e)
+        // Brings forward MainMenu
         {
+            AddMember addMember = (AddMember)Application.OpenForms["AddMember"];
+            addMember.Close();
             Application.OpenForms["MainMenu"].BringToFront();
 
         }
 
         private void BookAClassButton_Click(object sender, EventArgs e) 
-        // Opens Book a Class form
+        // If BookAClass Form is open then brings to front, otherwise opens new
         {
-            new BookAClass().Show();
+            if (Application.OpenForms.OfType<BookAClass>().Count() == 1)
+            {
+                Application.OpenForms.OfType<BookAClass>().First().BringToFront();
+            }
+            else
+            {
+                AddMember addMember = (AddMember)Application.OpenForms["AddMember"];
+                addMember.Close();
+
+                new BookAClass().Show();
+
+            }
         }
 
         private void memberBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -638,12 +651,17 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         }
 
         private void searchButton_Click(object sender, EventArgs e)
+        // If SearchMembers Form is open then closes and opens new to refresh the database in order to view newly added member
         {
             if (Application.OpenForms.OfType<SearchMembers>().Count() == 1)
+            {
                 Application.OpenForms.OfType<SearchMembers>().First().Close();
-
-            SearchMembers searchMembers = new SearchMembers();
-            searchMembers.Show();
+                new SearchMembers().Show();
+            }
+            else
+            {
+                new SearchMembers().Show();
+            }
         }
     }
 }

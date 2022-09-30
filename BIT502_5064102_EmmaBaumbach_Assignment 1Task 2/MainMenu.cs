@@ -23,14 +23,16 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         }
 
         private void addMember_Click(object sender, EventArgs e)
-        // Opens Add Member form
+        // If AddMembers Form is open then brings to front, otherwise opens new
         {
             if (Application.OpenForms.OfType<AddMember>().Count() == 1)
-                Application.OpenForms.OfType<AddMember>().First().Close();
-
-            AddMember addMember = new AddMember();
-            addMember.Show();
-            //new AddMember().Show();
+            {
+                Application.OpenForms.OfType<AddMember>().First().BringToFront();
+            }
+            else
+            {
+                new AddMember().Show();
+            }
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
@@ -48,19 +50,28 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         }
 
         private void bookClassButton_Click(object sender, EventArgs e)
-        // Opens Book a Class form
+        // If BookAClass Form is open then brings to front, otherwise opens new
         {
-            new BookAClass().Show();
+            if (Application.OpenForms.OfType<BookAClass>().Count() == 1)
+            {
+                Application.OpenForms.OfType<BookAClass>().First().BringToFront();
+            }
+            else
+            {
+                new BookAClass().Show();
+            }
         }
         private void searchButton_Click(object sender, EventArgs e)
-        // Opens Search Members form
+        // If SearchMembers Form is open then brings to front, otherwise opens new
         {
             if (Application.OpenForms.OfType<SearchMembers>().Count() == 1)
-                Application.OpenForms.OfType<SearchMembers>().First().Close();
-
-            SearchMembers searchMembers = new SearchMembers();
-            searchMembers.Show();
-            //new SearchMembers().Show();
+            {
+                Application.OpenForms.OfType<SearchMembers>().First().BringToFront();
+            }
+            else
+            {
+                new SearchMembers().Show();
+            }
         }
     }
 }

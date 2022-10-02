@@ -41,7 +41,6 @@
             System.Windows.Forms.Label descriptionLabel1;
             System.Windows.Forms.Label instructorLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchMembers));
-            System.Windows.Forms.Label firstNameLabel1;
             this.mainMenuButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.addMemberButton = new System.Windows.Forms.Button();
@@ -114,7 +113,6 @@
             this.bookingClassDetailsTableAdapter = new BIT502_5064102_EmmaBaumbach_Assignment_1Task_2.CityGymMembershipDataSetTableAdapters.BookingClassDetailsTableAdapter();
             this.membershipBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.membershipTableAdapter = new BIT502_5064102_EmmaBaumbach_Assignment_1Task_2.CityGymMembershipDataSetTableAdapters.MembershipTableAdapter();
-            this.firstNameTextBox1 = new System.Windows.Forms.TextBox();
             memberIDLabel = new System.Windows.Forms.Label();
             firstNameLabel = new System.Windows.Forms.Label();
             lastNameLabel = new System.Windows.Forms.Label();
@@ -126,7 +124,6 @@
             descriptionLabel = new System.Windows.Forms.Label();
             descriptionLabel1 = new System.Windows.Forms.Label();
             instructorLabel = new System.Windows.Forms.Label();
-            firstNameLabel1 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bookingClassDetailsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingBindingSource)).BeginInit();
@@ -831,6 +828,7 @@
             this.removeFilterButton.TabIndex = 77;
             this.removeFilterButton.Text = "Remove Filter";
             this.removeFilterButton.UseVisualStyleBackColor = true;
+            this.removeFilterButton.Click += new System.EventHandler(this.removeFilterButton_Click);
             // 
             // filterButton
             // 
@@ -919,31 +917,12 @@
             // 
             this.membershipTableAdapter.ClearBeforeFill = true;
             // 
-            // firstNameLabel1
-            // 
-            firstNameLabel1.AutoSize = true;
-            firstNameLabel1.Location = new System.Drawing.Point(193, 87);
-            firstNameLabel1.Name = "firstNameLabel1";
-            firstNameLabel1.Size = new System.Drawing.Size(80, 17);
-            firstNameLabel1.TabIndex = 79;
-            firstNameLabel1.Text = "First Name:";
-            // 
-            // firstNameTextBox1
-            // 
-            this.firstNameTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.memberBindingSource, "FirstName", true));
-            this.firstNameTextBox1.Location = new System.Drawing.Point(279, 84);
-            this.firstNameTextBox1.Name = "firstNameTextBox1";
-            this.firstNameTextBox1.Size = new System.Drawing.Size(100, 22);
-            this.firstNameTextBox1.TabIndex = 80;
-            // 
             // SearchMembers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(1061, 868);
-            this.Controls.Add(firstNameLabel1);
-            this.Controls.Add(this.firstNameTextBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.filterButton);
             this.Controls.Add(this.removeFilterButton);
@@ -1066,6 +1045,5 @@
         private System.Windows.Forms.TextBox instructorTextBox;
         private System.Windows.Forms.BindingSource membershipBindingSource;
         private CityGymMembershipDataSetTableAdapters.MembershipTableAdapter membershipTableAdapter;
-        private System.Windows.Forms.TextBox firstNameTextBox1;
     }
 }

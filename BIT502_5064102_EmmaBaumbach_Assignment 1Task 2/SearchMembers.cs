@@ -12,8 +12,6 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 {
     public partial class SearchMembers : Form
     {
-        int memTypeFilter = 0;
-
         public SearchMembers()
         {
             InitializeComponent();
@@ -162,17 +160,25 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 
         private void radioPremium_CheckedChanged(object sender, EventArgs e)
         {
-            memTypeFilter += 3;
         }
         
         private void radioRegular_CheckedChanged(object sender, EventArgs e)
         {
-            memTypeFilter = 2;
         }
 
         private void radioBasic_CheckedChanged(object sender, EventArgs e)
         {
-            memTypeFilter = 1;
+
+        }
+
+        private void removeFilterButton_Click(object sender, EventArgs e)
+        {
+            radioBasic.Checked = false;
+            radioRegular.Checked = false;
+            radioPremium.Checked = false;
+
+            DataView memberDataView = new DataView(cityGymMembershipDataSet.Member);
+            memberBindingSource.DataSource = memberDataView;
         }
     }
 }

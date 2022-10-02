@@ -107,6 +107,8 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
                 ReturnColour(); 
                 // If user input is in required format, error level colour is removed
                 MessageBox.Show("Thank you, your registration form has been submitted successfully.");
+                Application.OpenForms.OfType<AddMember>().First().Close();
+
             }
 
         }
@@ -442,7 +444,6 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         // Calls the function to store new member information to a text file
         {
             SubmitData();
-            Application.OpenForms.OfType<AddMember>().First().Close();
 
         }
 

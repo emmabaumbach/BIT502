@@ -73,5 +73,12 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
             }
             Application.OpenForms.OfType<BookAClass>().First().Close();
         }
+
+        private void bookClassButton_Click(object sender, EventArgs e)
+        {
+
+            Application.OpenForms.OfType<BookAClass>().First().Close();
+
+        }
     }
 }

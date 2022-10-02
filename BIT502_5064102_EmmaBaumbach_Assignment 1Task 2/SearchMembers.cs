@@ -65,7 +65,7 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         private void helpButton_Click(object sender, EventArgs e) 
         // Shows a messagebox with instructions and information about features on the page
         {
-            string helpMessage = "Search by member name and/or membership type and select ‘Search’." + Environment.NewLine + Environment.NewLine + "‘Clear’ will clear all fields." + Environment.NewLine + Environment.NewLine + "Use the Filter Results section to filter members by name or membership." + Environment.NewLine + Environment.NewLine + "Alternatively, ‘Main Menu’ will take you back to the main menu, ‘Book a Class’ will open a booking screen, and the ‘Exit’ button to exit the application.";
+            string helpMessage = "Search by entering member name and selecting 'Search'. Filter these results further by selecting Membership Type and selecting 'Filter'." + Environment.NewLine + Environment.NewLine + "‘Clear’ will clear the searchbar." + Environment.NewLine + Environment.NewLine + "‘Remove Filter’ will remove the Membership Type filter." + Environment.NewLine + Environment.NewLine + "Alternatively, ‘Main Menu’ will take you back to the main menu, ‘Add a Member’ will open the add a member form, ‘Book a Class’ will open a booking form, and the ‘Exit’ button to exit the application.";
             string messageBoxTitle = "Search Members Help";
             MessageBox.Show(helpMessage, messageBoxTitle);
         }
@@ -101,7 +101,7 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            // Create a dataview that we can then filter
+            // Create the dataview to filter
             DataView memberDataView = new DataView(cityGymMembershipDataSet.Member);
 
             String filter = membersFilter(false);
@@ -112,7 +112,7 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 
         private void filterButton_Click(object sender, EventArgs e)
         {
-            // Create a dataview that we can then filter
+            // Create the dataview to filter
             DataView memberDataView = new DataView(cityGymMembershipDataSet.Member);
 
 
@@ -173,6 +173,7 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 
         private void removeFilterButton_Click(object sender, EventArgs e)
         {
+            // Reset all radio buttons, reset the data view
             radioBasic.Checked = false;
             radioRegular.Checked = false;
             radioPremium.Checked = false;

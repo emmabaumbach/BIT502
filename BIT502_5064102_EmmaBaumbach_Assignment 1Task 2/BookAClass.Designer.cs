@@ -144,6 +144,7 @@
             this.bookClassButton.TabIndex = 15;
             this.bookClassButton.Text = "Book Class";
             this.bookClassButton.UseVisualStyleBackColor = true;
+            this.bookClassButton.Click += new System.EventHandler(this.bookClassButton_Click);
             // 
             // clearButton
             // 

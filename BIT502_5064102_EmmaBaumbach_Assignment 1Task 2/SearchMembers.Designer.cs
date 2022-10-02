@@ -629,7 +629,6 @@
             this.memberDataGridView.Location = new System.Drawing.Point(32, 533);
             this.memberDataGridView.Name = "memberDataGridView";
             this.memberDataGridView.RowTemplate.Height = 24;
-            this.memberDataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.memberDataGridView.Size = new System.Drawing.Size(992, 220);
             this.memberDataGridView.TabIndex = 76;
             this.memberDataGridView.UseWaitCursor = true;

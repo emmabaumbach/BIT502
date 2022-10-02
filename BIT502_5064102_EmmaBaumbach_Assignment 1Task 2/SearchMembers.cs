@@ -106,36 +106,58 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
             // Create a dataview that we can then filter
             DataView memberDataView = new DataView(cityGymMembershipDataSet.Member);
 
-            // A filter over both first and last name
-            // Create the filter string
-            string filter = "";
-           
-            filter = "[FirstName] LIKE '" + searchTextBox.Text + "*'";
-            filter += " OR[LastName] LIKE '" + searchTextBox.Text + "*'";
-            //filter += " OR[MemberID] LIKE '" + searchTextBox.Text + "*'";
-            filter += " OR[FirstName] + ' ' + [LastName] LIKE '" + searchTextBox.Text + "*'";
-            //+ ' ' + [MemberID] 
-
-            // Apply this filter
+            String filter = membersFilter(false);
             memberDataView.RowFilter = filter;
 
-            // Use this DataView as the DataSource for the GridView
-            memberDataGridView.DataSource = memberDataView;
-            
+            memberBindingSource.DataSource = memberDataView;         
         }
 
         private void filterButton_Click(object sender, EventArgs e)
         {
-            DataView membershipTypeDataView = new DataView(cityGymMembershipDataSet.Member);
+            // Create a dataview that we can then filter
+            DataView memberDataView = new DataView(cityGymMembershipDataSet.Member);
 
+
+            String filter = membersFilter(true);
+            memberDataView.RowFilter = filter;
+
+            memberBindingSource.DataSource = memberDataView;
+        }
+
+        private String membersFilter(bool filterByMembershipType)
+        {
             string filter = "";
 
-            filter = "[MembershipID] LIKE '" + memTypeFilter;
+            if (filterByMembershipType)
+            {
+                int filterMembershipById = 0;
 
-            membershipTypeDataView.RowFilter = filter;
+                if (radioBasic.Checked)
+                {
+                    filterMembershipById = 1;
+                }
+                else if (radioRegular.Checked)
+                {
+                    filterMembershipById = 2;
+                }
+                else if (radioPremium.Checked)
+                {
+                    filterMembershipById = 3;
+                }
+                if (filterMembershipById > 0)
+                {
+                    filter += "MembershipId = " + filterMembershipById.ToString() + " AND (";
+                }
+            } else
+            {
+                filter += "(";
+            }
 
-            // Use this DataView as the DataSource for the GridView
-            memberDataGridView.DataSource = membershipTypeDataView;
+            filter += "[FirstName] LIKE '" + searchTextBox.Text + "*'";
+            filter += " OR[LastName] LIKE '" + searchTextBox.Text + "*'";
+            filter += " OR[FirstName] + ' ' + [LastName] LIKE '" + searchTextBox.Text + "*'";
+            filter += ")";
+            return filter;
         }
 
         private void radioPremium_CheckedChanged(object sender, EventArgs e)

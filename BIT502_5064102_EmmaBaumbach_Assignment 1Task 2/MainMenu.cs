@@ -27,7 +27,8 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         {
             if (Application.OpenForms.OfType<AddMember>().Count() == 1)
             {
-                Application.OpenForms.OfType<AddMember>().First().BringToFront();
+                Application.OpenForms.OfType<AddMember>().First().Close();
+                new AddMember().Show();
             }
             else
             {
@@ -54,13 +55,15 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         {
             if (Application.OpenForms.OfType<BookAClass>().Count() == 1)
             {
-                Application.OpenForms.OfType<BookAClass>().First().BringToFront();
+                Application.OpenForms.OfType<BookAClass>().First().Close();
+                new BookAClass().Show();
             }
             else
             {
                 new BookAClass().Show();
             }
         }
+
         private void searchButton_Click(object sender, EventArgs e)
         // If SearchMembers Form is open then brings to front, otherwise opens new
         {

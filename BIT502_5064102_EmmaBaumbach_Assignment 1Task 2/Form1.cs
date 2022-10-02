@@ -295,10 +295,12 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 
             // Insert into Dataset
             cityGymMembershipDataSet.Member.Rows.Add(newMemberRow);
+            memberTableAdapter.Update(cityGymMembershipDataSet.Member);
             this.Validate();
             this.memberBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.cityGymMembershipDataSet);
             this.memberTableAdapter.Fill(this.cityGymMembershipDataSet.Member);
+            this.cityGymMembershipDataSet.Member.AcceptChanges();
         }
 
         public AddMember()
@@ -440,6 +442,8 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         // Calls the function to store new member information to a text file
         {
             SubmitData();
+            Application.OpenForms.OfType<AddMember>().First().Close();
+
         }
 
         public void radioPayWeekly_CheckedChanged(object sender, EventArgs e) 

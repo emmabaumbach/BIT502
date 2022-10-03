@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.2017
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIT502_5064102_EmmaBaumbach_Assignment 1Task 2", "BIT502_5064102_EmmaBaumbach_Assignment 1Task 2\BIT502_5064102_EmmaBaumbach_Assignment 1Task 2.csproj", "{A093AB65-61E5-4412-A178-C07176A0C149}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIT502_5064102_EmmaBaumbach_Assignment 3Task 2", "BIT502_5064102_EmmaBaumbach_Assignment 1Task 2\BIT502_5064102_EmmaBaumbach_Assignment 3Task 2.csproj", "{A093AB65-61E5-4412-A178-C07176A0C149}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

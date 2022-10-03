@@ -56,9 +56,11 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         }
 
         private void clearButton_Click(object sender, EventArgs e)
-        // Clears search fields and set the DataSource for the GridView to the full Member dataset
+        // Clears search fields and set the DataSource for the GridView to full Member dataset
         {
-            memberDataGridView.DataSource = cityGymMembershipDataSet.Member;
+            DataView memberDataView = new DataView(cityGymMembershipDataSet.Member);
+            memberBindingSource.DataSource = memberDataView;
+
             searchTextBox.Text = "";
         }
 

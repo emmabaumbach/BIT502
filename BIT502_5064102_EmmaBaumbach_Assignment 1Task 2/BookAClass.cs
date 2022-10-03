@@ -20,7 +20,7 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
         private void helpButton_Click(object sender, EventArgs e)
         // Shows a messagebox with instructions and information about features on the page
         {
-            string helpMessage = "Enter a valid Membership ID to select a member." + Environment.NewLine + Environment.NewLine + "Once the user has been selected, choose the Fitness Class and preferred day/ time, followed by preferred week, then select the ‘Book Class’ button or ‘Clear’ to start over." + Environment.NewLine + Environment.NewLine + "Alternatively, ‘Main Menu’ will take you back to the main menu, 'Add a Member' will take you to the member registration form, ‘Search’ will open a Database Search screen, and the ‘Exit’ button will exit the application.";
+            string helpMessage = "Enter a valid Member ID or Member name to select a member." + Environment.NewLine + Environment.NewLine + "Once user has been selected, choose the Fitness Class and preferred day/ time, followed by preferred week, then select the ‘Book Class’ button or ‘Clear’ to start over." + Environment.NewLine + Environment.NewLine + "Alternatively, ‘Main Menu’ will take you back to the main menu, 'Add a Member' will take you to the member registration form, ‘Search’ will open a Database Search screen, and the ‘Exit’ button will exit the application.";
             string helpBoxTitle = "Book a Class Help";
             MessageBox.Show(helpMessage, helpBoxTitle);
         }
@@ -76,8 +76,23 @@ namespace BIT502_5064102_EmmaBaumbach_Assignment_1Task_2
 
         private void bookClassButton_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Thank you, your booking request has been submitted successfully.");
             Application.OpenForms.OfType<BookAClass>().First().Close();
+
+        }
+
+        private void bookingBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.bookingBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.cityGymMembershipDataSet);
+
+        }
+
+        private void BookAClass_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'cityGymMembershipDataSet.Booking' table. You can move, or remove it, as needed.
+            this.bookingTableAdapter.Fill(this.cityGymMembershipDataSet.Booking);
 
         }
     }
